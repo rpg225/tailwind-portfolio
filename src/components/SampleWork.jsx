@@ -6,7 +6,7 @@ const SampleWork = () => {
   <section className="mx-auto md:px-6 bg-red-200 mb-42 py-6 text-center">
     <h2 className=" text-3xl font-bold py-6"> Here are some of my Projects </h2>
       <div className="flex justify-center space-x-4">
-        <div class=" max-w-sm bg-white shadow-lg rounded-lg overflow-hidden m-4 ">
+        <div className=" max-w-sm bg-white shadow-lg rounded-lg overflow-hidden m-4 ">
             <div className="max-w-sm rounded overflow-hidden shaddow-lg">
               <img className="w-full" src="assets/img/asteroidsgamecard.png" alt="asteroidsgamecard" />
                   <div className="px-6 py-4"></div>
@@ -21,7 +21,7 @@ const SampleWork = () => {
           </div>
             {/* project 2 */}
           <div className="flex justify-center space-x-4">
-            <div class=" max-w-sm bg-white shadow-lg rounded-lg overflow-hidden m-4 ">
+            <div className=" max-w-sm bg-white shadow-lg rounded-lg overflow-hidden m-4 ">
             <div className="max-w-sm rounded overflow-hidden shaddow-lg">
               <img className="w-full" src="assets/img/asteroidsgamecard.png" alt="asteroidsgamecard" />
                   <div className="px-6 py-4"></div>
@@ -38,7 +38,7 @@ const SampleWork = () => {
         </div>
         {/* project 3 */}
         <div className="flex justify-center space-x-4">
-            <div class=" max-w-sm bg-white shadow-lg rounded-lg overflow-hidden m-4 ">
+            <div className=" max-w-sm bg-white shadow-lg rounded-lg overflow-hidden m-4 ">
             <div className="max-w-sm rounded overflow-hidden shaddow-lg">
               <img className="w-full" src="assets/img/cat-tinder-card.png" alt="cattinder-gamecard" />
                   <div className="px-6 py-4"></div>
