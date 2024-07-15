@@ -8,7 +8,7 @@ const SampleWork = () => {
       <div className="flex justify-center space-x-4">
         <div className=" max-w-sm bg-white shadow-lg rounded-lg overflow-hidden m-4 ">
             <div className="max-w-sm rounded overflow-hidden shaddow-lg">
-              <img className="w-full" src="assets/img/asteroidsgamecard.png" alt="asteroidsgamecard" />
+            <img className="w-full" src="assets/asteroidsgamecard.png" alt="asteroidsgamecard" />
                   <div className="px-6 py-4"></div>
                     <div className="font-bold text-xl mb2"> Asteroids Game  </div>
                       <p className="text-gray-700 text-base"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tempore facilis accusamus blanditiis dolorem vel assumenda perspiciatis eligendi, quis harum, excepturi explicabo consequuntur voluptates sed quae quas, inventore obcaecati rerum.</p>
@@ -23,7 +23,7 @@ const SampleWork = () => {
           <div className="flex justify-center space-x-4">
             <div className=" max-w-sm bg-white shadow-lg rounded-lg overflow-hidden m-4 ">
             <div className="max-w-sm rounded overflow-hidden shaddow-lg">
-              <img className="w-full" src="assets/img/asteroidsgamecard.png" alt="asteroidsgamecard" />
+              <img className="w-full" src="assets/learnfrench.png" alt="learnfrenchgamecard" />
                   <div className="px-6 py-4"></div>
                     <div className="font-bold text-xl mb2"> French Quiz App  </div>
                       <p className="text-gray-700 text-base"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tempore facilis accusamus blanditiis dolorem vel assumenda perspiciatis eligendi, quis harum, excepturi explicabo consequuntur voluptates sed quae quas, inventore obcaecati rerum.</p>
@@ -40,7 +40,7 @@ const SampleWork = () => {
         <div className="flex justify-center space-x-4">
             <div className=" max-w-sm bg-white shadow-lg rounded-lg overflow-hidden m-4 ">
             <div className="max-w-sm rounded overflow-hidden shaddow-lg">
-              <img className="w-full" src="assets/img/cat-tinder-card.png" alt="cattinder-gamecard" />
+              <img className="w-full" src="assets/cat-tinder-card.png" alt="cattinder-gamecard" />
                   <div className="px-6 py-4"></div>
                     <div className="font-bold text-xl mb2"> Cat Tinder </div>
                       <p className="text-gray-700 text-base"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tempore facilis accusamus blanditiis dolorem vel assumenda perspiciatis eligendi, quis harum, excepturi explicabo consequuntur voluptates sed quae quas, inventore obcaecati rerum.</p>

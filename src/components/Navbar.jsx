@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 
 function NavBar() {
   return (
-    <header className="bg-zinc-600">
+    <header className="bg-slate-950">
             
                 <div className="container mx-auto flex justify-between">
                 <nav className='flex'>
