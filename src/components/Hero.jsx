@@ -2,8 +2,15 @@
 const Hero = () => {
   return (
     <section id='hero' className='bg-blue-500'>
-        <div className='mx-auto max-w-2xl py-32 sm:py-48 lg:py-56'>
-        <div className='relative isolate px-6 pt-14 lg:px-8'>
+        <div className='mx-auto mb-max-w-xl pt-4 pb-7'>
+        <div className="flex justify-center items-center">
+      <img
+        src="assets/linkedin-headshot.png"
+        alt="profile-picture"
+        className="rounded-full w-32 h-32 object-cover"
+      />
+    </div>
+        <div className='relative isolate px-6 pt-10 lg:px-8'>
                 <div className='text-center'>
                 <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'> Hello! I am Rambod! </h1>
                 <h2 className='text-2xl font-italic tracking-tight text-gray-700 sm:text-4xl'>I am a Web Developer</h2>

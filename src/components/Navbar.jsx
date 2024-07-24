@@ -3,8 +3,14 @@ import { NavLink } from 'react-router-dom'
 function NavBar() {
   return (
     <header className="bg-slate-950">
-            
                 <div className="container mx-auto flex justify-between">
+                    <div className="flex flex-shrink-0 items-center">
+                    <img
+                    alt="my logo"
+                    src="assets/rpg-logo.png"
+                    className="h-14 w-auto rounded-full"
+                    />
+                </div>
                 <nav className='flex'>
                     <NavLink to="/" 
                     exact 

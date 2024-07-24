@@ -26,7 +26,7 @@ function Project4Card() {
       </CardHeader>
       <CardBody>
         <Typography variant="h5" color="blue-gray" className="mb-2">
-          Cat Tinder
+          Hello world
         </Typography>
         <Typography>
           The place is close to Barceloneta Beach and bus stop just 2 min by
