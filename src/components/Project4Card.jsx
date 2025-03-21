@@ -20,18 +20,16 @@ function Project4Card() {
     <Card className="mt-6 w-96 py-4 px-4 shadow-lg rounded-lg ">
       <CardHeader color="blue-gray" className="relative h-56">
         <img
-          src="assets/learnfrench.png"
+          src="assets/babylon-3d-app.png"
           alt="card-image"
         />
       </CardHeader>
       <CardBody>
         <Typography variant="h5" color="blue-gray" className="mb-2">
-          Hello world
+          Babylon 3D App
         </Typography>
         <Typography>
-          The place is close to Barceloneta Beach and bus stop just 2 min by
-          walk and near to &quot;Naviglio&quot; where you can enjoy the main
-          night life in Barcelona.
+          This project was created using the Babylon JS framwork
         </Typography>
       </CardBody>
       <CardFooter className="pt-0">
@@ -45,7 +43,7 @@ function Project4Card() {
         <button className="bg-teal-900 flex items-center justify-center hover:bg-blue-700 text-white font-bold py-2 px-2 rounded">
             <a 
             className="text-sm flex items-center justify-center"
-            href="https://rpg225.github.io/AsteroidsJS/">
+            href="https://babylon3djs.netlify.app">
              Live Demo </a>
                 </button>
                 <button className="bg-slate-900 flex items-center justify-center hover:bg-blue-700 text-white font-bold py-2 px-2 rounded">

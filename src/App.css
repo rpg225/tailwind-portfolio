@@ -14,6 +14,10 @@
   border-radius: 5px;
 }
 
+.background-fix{
+  background-color: blueviolet;
+}
+
 .home-name {
   font-size: 150px;
 }
