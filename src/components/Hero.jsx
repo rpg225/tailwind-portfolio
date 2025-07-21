@@ -1,7 +1,7 @@
 
 const Hero = () => {
   return (
-    <section id='hero' className='bg-blue-500'>
+    <section id='hero' className='bg-red-500'>
         <div className='mx-auto mb-max-w-xl pt-4 pb-7'>
         <div className="flex justify-center items-center">
       <img

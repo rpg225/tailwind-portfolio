@@ -1,5 +1,5 @@
 import { FaGithub,FaHtml5, FaCss3, FaReact, FaJsSquare, FaNode, FaBootstrap } from "react-icons/fa";
-import { SiTypescript, SiSanity, SiWordpress, SiFigma, SiVuedotjs, SiAngular, SiPhp, SiExpress, SiVisualstudio } from "react-icons/si";
+import { SiTypescript, SiRust, SiWordpress, SiFigma, SiVuedotjs, SiAngular, SiPhp, SiExpress, SiVisualstudio } from "react-icons/si";
 import { SiSolidity, SiCplusplus, SiPython, SiWeb3Dotjs } from "react-icons/si";
 
 function Skills() {
@@ -35,8 +35,8 @@ function Skills() {
               <FaReact className='text-4xl text-gray-500'></FaReact>
               <p className='mt-2'>React</p>
             </li><li className='flex flex-col items-center'>
-              <SiSanity className='text-4xl text-gray-500'></SiSanity>
-              <p className='mt-2'>Sanity</p>
+              <SiRust className='text-4xl text-gray-500'></SiRust>
+              <p className='mt-2'>Rust</p>
             </li>
             <li className='flex flex-col items-center'>
               <FaNode className='text-4xl text-gray-500'></FaNode>

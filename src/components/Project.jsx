@@ -11,12 +11,15 @@ const Project = () => {
         {/* first row */}
         <div className=" flex flex-wrap justify-center space-x-0 sm:space-x-4">
           <div className="w-full sm:w-auto mb-4 sm:mb-0">
-          <Project1Card />
+            {/* Cat Tinder */}
+            <Project1Card />
           </div>
           <div className="w-full sm:w-auto mb-4 sm:mb-0">
+            {/* Learn French */}
           <Project2Card />
           </div>
           <div className="w-full sm:w-auto mb-4 sm:mb-0">
+            {/* Asteroids */}
           <Project3Card />
           </div>
           
@@ -25,19 +28,19 @@ const Project = () => {
           <Project4Card />
           </div>
           <div className="w-full sm:w-auto mb-4 sm:mb-0">
-          <Project3Card />
+          <Project4Card />
           </div>
           <div className="w-full sm:w-auto mb-4 sm:mb-0">
-          <Project3Card />
+          <Project4Card />
           </div>
           <div className="w-full sm:w-auto mb-4 sm:mb-0">
-          <Project3Card />
+          <Project4Card />
           </div>
           <div className="w-full sm:w-auto mb-4 sm:mb-0">
-          <Project3Card />
+          <Project4Card />
           </div>
           <div className="w-full sm:w-auto mb-4 sm:mb-0">
-          <Project3Card />
+          <Project4Card />
           </div>
           {/* <Project4Card /> */}
           {/* project 6 */}

@@ -7,7 +7,7 @@ function NavBar() {
                     <div className="flex flex-shrink-0 items-center">
                     <img
                     alt="my logo"
-                    src="assets/rpg-logo.png"
+                    src="assets/SVG2.svg"
                     className="h-14 w-auto rounded-full"
                     />
                 </div>

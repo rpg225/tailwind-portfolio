@@ -1,6 +1,6 @@
 function Contact() {
     return (
-        <div className=" bg-sky-300 text-center py-6">
+        <div className=" bg-stone-300 text-center py-6">
             <h2 className="mb-12 text-3xl font-bold">Contact</h2>
               <form>
               <div className="relative mb-6" data-te-input-wrapper-init>
