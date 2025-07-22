@@ -5,7 +5,7 @@ const Hero = () => {
         <div className='mx-auto mb-max-w-xl pt-4 pb-7'>
         <div className="flex justify-center items-center">
       <img
-        src="assets/linkedin-headshot.png"
+        src="assets/headshot.jpg"
         alt="profile-picture"
         className="rounded-full w-32 h-32 object-cover"
       />

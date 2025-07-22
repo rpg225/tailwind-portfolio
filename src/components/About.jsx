@@ -11,7 +11,7 @@ const About = () => {
         <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
             <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-80">
             <img
-            src="assets/linkedin-headshot.png"
+            src="assets/headshot.jpg"
             alt="profile-picture"
             className="w-full h-full object-cover"
             />
