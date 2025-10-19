@@ -1,4 +1,4 @@
-/* Paint Grid */
+/* QR Code Project */
 
 import {
     Card,
@@ -11,14 +11,14 @@ import {
   import { 
     FaHtml5, 
     FaCss3,
-    FaGithub,
+    // FaGithub,
     // FaReact,
     FaJsSquare } 
     from 'react-icons/fa';
   
   
 
-function Project5card() {
+function Project6card() {
     return(  <Card className="mt-6 w-96 py-4 px-4 shadow-lg rounded-lg ">
         <CardHeader color="blue-gray" className="relative h-56">
           <img
@@ -28,7 +28,7 @@ function Project5card() {
         </CardHeader>
         <CardBody>
           <Typography variant="h5" color="blue-gray" className="mb-2">
-            Grid JavaScript Application
+            QR Code Generator
           </Typography>
           <Typography>
             This project was created with JavaScript 
@@ -61,4 +61,4 @@ function Project5card() {
       );
 }
 
-export default Project5card
+export default Project6card

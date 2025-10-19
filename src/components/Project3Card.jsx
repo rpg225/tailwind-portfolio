@@ -29,7 +29,7 @@ function Project3Card() {
       Asteroids JavaScript Game
     </Typography>
     <Typography>
-      This project was created with JavaScript
+      A complete, playable version of the arcade game Asteroids, showcasing core game development principles using only vanilla JavaScript to manage state, input, and graphics.
     </Typography>
   </CardBody>
   <CardFooter className="pt-0">
@@ -37,13 +37,12 @@ function Project3Card() {
           <i> <FaHtml5 className='text-4xl text-gray-500'></FaHtml5> </i>
           <i> <FaCss3 className='text-4xl text-gray-500'></FaCss3> </i>
           <i> <FaJsSquare className='text-4xl text-gray-500'></FaJsSquare> </i>
-          <i> <FaReact className='text-4xl text-gray-500'></FaReact> </i>
     </div>
     <div className="px-6 pt-4 pb-2 flex space-x-2 items-center text-center justify-center">
     <button className="bg-teal-900 flex items-center justify-center hover:bg-blue-700 text-white font-bold py-2 px-2 rounded">
         <a 
         className="text-sm flex items-center justify-center"
-        href="https://frenchlearnreact.netlify.app/">
+        href=" ">
          Live Demo </a>
             </button>
             <button className="bg-slate-900 flex items-center justify-center hover:bg-blue-700 text-white font-bold py-2 px-2 rounded">

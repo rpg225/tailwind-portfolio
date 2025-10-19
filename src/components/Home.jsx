@@ -14,7 +14,7 @@ function Home() {
         {/* For this section only just put 3 samples of work, for everything else click view my work*/}
    <section className='mx-auto md:px-6 bg-red-200 mb-42 py-6 text-center'>
     < h2 className=" text-3xl font-bold py-6"> Here are some of my Projects! </h2>
-      <div className='flex flex-wrap px-2 justify-center'>
+      <div className='flex flex-wrap px-2 justify-center gap-8'>
       <Project1Card />
       <Project2Card />
       <Project3Card />

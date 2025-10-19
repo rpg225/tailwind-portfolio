@@ -29,7 +29,7 @@ function Project2Card() {
           Learn French React App
         </Typography>
         <Typography>
-          This project was created using the React JS framework
+         A streamlined French vocabulary builder, developed using React, that provides users with a new word, translation, and context sentence on each click.
         </Typography>
       </CardBody>
       <CardFooter className="pt-0">

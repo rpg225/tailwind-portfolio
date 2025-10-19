@@ -23,20 +23,24 @@ const Project = () => {
           <Project3Card />
           </div>
           
-          {/* testing page */}
+          {/* Babylon 3D */}
+          <div className="w-full sm:w-auto mb-4 sm:mb-0">
+          <Project4Card />
+          </div>
+          {/*  QR App */}
           <div className="w-full sm:w-auto mb-4 sm:mb-0">
           <Project4Card />
           </div>
           <div className="w-full sm:w-auto mb-4 sm:mb-0">
+          {/* Apple Catcher */}
           <Project4Card />
           </div>
           <div className="w-full sm:w-auto mb-4 sm:mb-0">
+          {/* Pastry Landing Page */}
           <Project4Card />
           </div>
           <div className="w-full sm:w-auto mb-4 sm:mb-0">
-          <Project4Card />
-          </div>
-          <div className="w-full sm:w-auto mb-4 sm:mb-0">
+            {/* NFT Minter*/}
           <Project4Card />
           </div>
           <div className="w-full sm:w-auto mb-4 sm:mb-0">
