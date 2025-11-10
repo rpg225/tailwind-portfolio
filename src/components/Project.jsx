@@ -45,7 +45,17 @@ const Project = () => {
           </div>
           <div className="w-full sm:w-auto mb-4 sm:mb-0">
           <Project4Card />
-          </div>
+            </div>
+            <div className="w-full sm:w-auto mb-4 sm:mb-0">
+          <Project4Card />
+            </div>
+            <div className="w-full sm:w-auto mb-4 sm:mb-0">
+          <Project4Card />
+            </div>
+            <div className="w-full sm:w-auto mb-4 sm:mb-0">
+          <Project4Card />
+            </div>
+            
           {/* <Project4Card /> */}
           {/* project 6 */}
         </div>

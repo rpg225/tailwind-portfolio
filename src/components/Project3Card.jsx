@@ -10,7 +10,7 @@ import {
   FaHtml5, 
   FaCss3,
   FaGithub,
-  FaReact,
+  // FaReact,
   FaJsSquare } 
   from 'react-icons/fa';
 
