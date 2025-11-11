@@ -1,4 +1,4 @@
-/* Paint App */
+/* Votorb Web3 */
 
 import {
 	Card,
@@ -14,6 +14,7 @@ import {
 	// FaReact,
 	FaJsSquare,
 } from "react-icons/fa";
+import { SiSolidity, SiWeb3Dotjs } from "react-icons/si";
 
 function Project6card() {
 	return (
@@ -22,9 +23,11 @@ function Project6card() {
 				<img src="assets/paint-grid.png" alt="card-image" />
 			</CardHeader>
 			<CardBody>
-				<Typography variant="h5" color="blue-gray" className="mb-2">
-					Paint App
-				</Typography>
+				<Typography
+					variant="h5"
+					color="blue-gray"
+					className="mb-2"
+				></Typography>
 				<Typography>This project was created with JavaScript</Typography>
 			</CardBody>
 			<CardFooter className="pt-0">
@@ -40,6 +43,12 @@ function Project6card() {
 					<i>
 						{" "}
 						<FaJsSquare className="text-4xl text-gray-500"></FaJsSquare>{" "}
+					</i>
+					<i>
+						<SiSolidity className="text-4xl text-gray-500"></SiSolidity>
+					</i>
+					<i>
+						<SiWeb3Dotjs className="text-4xl text-gray-500"></SiWeb3Dotjs>
 					</i>
 				</div>
 				<div className="px-6 pt-4 pb-2 flex space-x-2 items-center text-center justify-center">

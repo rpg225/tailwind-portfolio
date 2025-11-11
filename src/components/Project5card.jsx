@@ -1,4 +1,4 @@
-/* Paint Grid */
+/* QR Code Generator*/
 
 import {
     Card,
@@ -22,13 +22,13 @@ function Project5card() {
     return(  <Card className="mt-6 w-96 py-4 px-4 shadow-lg rounded-lg ">
         <CardHeader color="blue-gray" className="relative h-56">
           <img
-            src="assets/paint-grid.png"
+            src="assets/qr-code-gen.png"
             alt="card-image"
           />
         </CardHeader>
         <CardBody>
           <Typography variant="h5" color="blue-gray" className="mb-2">
-            Grid JavaScript Application
+            QR CODE GENERATOR
           </Typography>
           <Typography>
             This project was created with JavaScript 
@@ -44,13 +44,13 @@ function Project5card() {
           <button className="bg-teal-900 flex items-center justify-center hover:bg-blue-700 text-white font-bold py-2 px-2 rounded">
               <a 
               className="text-sm flex items-center justify-center"
-              href=" ">
+              href="https://rpg225.github.io/QR-Code-Generator/">
                Live Demo </a>
                   </button>
                   <button className="bg-slate-900 flex items-center justify-center hover:bg-blue-700 text-white font-bold py-2 px-2 rounded">
               <a 
               className="text-sm flex items-center justify-center"
-              href="https://github.com/rpg225/AsteroidsJS">
+              href="https://github.com/rpg225/QR-Code-Generator">
               <i className="text-center"> <FaGithub className='text-xl mr-2 justify-center text-gray-500'></FaGithub> </i>
                 Repo </a>
                   </button>
@@ -61,4 +61,4 @@ function Project5card() {
       );
 }
 
-export default Project5card
+export default Project5card;

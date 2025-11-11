@@ -29,7 +29,7 @@ function Project4Card() {
           Babylon 3D App
         </Typography>
         <Typography>
-          This project was created using the Babylon JS framwork
+          This project was created using the Babylon JS framework
         </Typography>
       </CardBody>
       <CardFooter className="pt-0">

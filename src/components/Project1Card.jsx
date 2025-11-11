@@ -13,7 +13,7 @@ import {
   FaReact,
   FaJsSquare } 
   from 'react-icons/fa';
-  import { SiSolidity, SiWeb3Dotjs } from "react-icons/si";
+import { SiSolidity, SiWeb3Dotjs } from "react-icons/si";
 
 
 function Project1Card() {
