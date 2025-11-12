@@ -4,6 +4,7 @@ import Project3Card from "./Project3Card"
 import Project4Card from "./Project4Card"
 import Project5Card from "./Project5Card"
 import Project6Card from "./Project6Card"
+import Project7Card from "./Project7Card"
 
 const Project = () => {
   return (
@@ -21,7 +22,7 @@ const Project = () => {
           <Project4Card />
           <Project5Card />
           <Project6Card />
-          <Project4Card />
+          <Project7Card />
           <Project4Card />
           <Project4Card />
           <Project4Card />

@@ -16,19 +16,17 @@ import {
 } from "react-icons/fa";
 import { SiSolidity, SiWeb3Dotjs } from "react-icons/si";
 
-function Project6card() {
+function Project7card() {
 	return (
 		<Card className="mt-6 w-96 py-4 px-4 shadow-lg rounded-lg ">
 			<CardHeader color="blue-gray" className="relative h-56">
-				<img src="assets/paint-grid.png" alt="card-image" />
+				<img src="assets/voltorb-flip-web3.png" alt="card-image" />
 			</CardHeader>
 			<CardBody>
-				<Typography
-					variant="h5"
-					color="blue-gray"
-					className="mb-2"
-				></Typography>
-				<Typography>This project was created with JavaScript</Typography>
+				<Typography variant="h5" color="blue-gray" className="mb-2">
+					Voltorb Flip Web3
+				</Typography>
+				<Typography>This project is a decentralized application (DApp) that brings the classic "Voltorb Flip" mini-game to the blockchain. The core game logic, including board state and scoring, is managed by a Solidity smart contract deployed on the Ethereum Sepolia testnet.</Typography>
 			</CardBody>
 			<CardFooter className="pt-0">
 				<div className="px-6 pt-4 pb-2 flex space-x-2 items-center text-center justify-center">
@@ -79,4 +77,4 @@ function Project6card() {
 	);
 }
 
-export default Project6card;
+export default Project7card;
