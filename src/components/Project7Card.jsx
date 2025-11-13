@@ -26,7 +26,7 @@ function Project7card() {
 				<Typography variant="h5" color="blue-gray" className="mb-2">
 					Voltorb Flip Web3
 				</Typography>
-				<Typography>This project is a decentralized application (DApp) that brings the classic "Voltorb Flip" mini-game to the blockchain. The core game logic, including board state and scoring, is managed by a Solidity smart contract deployed on the Ethereum Sepolia testnet.</Typography>
+				<Typography>This project is a decentralized application (DApp) that brings the classic "Voltorb Flip" mini-game to the blockchain. The core game logic, including board state and scoring, is managed by a Solidity smart contract deployed on the Ethereum Sepolia testnet. Please see the github repository on how to install metamask.</Typography>
 			</CardBody>
 			<CardFooter className="pt-0">
 				<div className="px-6 pt-4 pb-2 flex space-x-2 items-center text-center justify-center">
@@ -53,7 +53,7 @@ function Project7card() {
 					<button className="bg-teal-900 flex items-center justify-center hover:bg-blue-700 text-white font-bold py-2 px-2 rounded">
 						<a
 							className="text-sm flex items-center justify-center"
-							href="https://rpg225.github.io/Paint/"
+							href="https://rpg225.github.io/voltorb-flip-web3/"
 						>
 							Live Demo{" "}
 						</a>
@@ -61,7 +61,7 @@ function Project7card() {
 					<button className="bg-slate-900 flex items-center justify-center hover:bg-blue-700 text-white font-bold py-2 px-2 rounded">
 						<a
 							className="text-sm flex items-center justify-center"
-							href="https://github.com/rpg225/Paint"
+							href="https://github.com/rpg225/voltorb-flip-web3"
 						>
 							<i className="text-center">
 								{" "}
