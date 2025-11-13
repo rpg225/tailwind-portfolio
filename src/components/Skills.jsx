@@ -1,114 +1,86 @@
+import { useState, useEffect, useRef } from 'react';
 import { FaGithub, FaHtml5, FaCss3, FaReact, FaJsSquare, FaNode, FaBootstrap } from "react-icons/fa";
 import { SiTypescript, SiRust, SiWordpress, SiPhp, SiExpress, SiVisualstudio } from "react-icons/si";
 import { SiSolidity, SiPython, SiWeb3Dotjs } from "react-icons/si";
 
 function Skills() {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
+  const skills = [
+    { icon: <FaHtml5 className='text-4xl text-orange-600' />, name: 'HTML' },
+    { icon: <FaCss3 className='text-4xl text-blue-600' />, name: 'CSS3' },
+    { icon: <FaJsSquare className='text-4xl text-yellow-500' />, name: 'JavaScript' },
+    { icon: <SiTypescript className='text-4xl text-blue-700' />, name: 'TypeScript' },
+    { icon: <FaGithub className='text-4xl text-gray-800' />, name: 'Github' },
+    { icon: <FaReact className='text-4xl text-cyan-500' />, name: 'React' },
+    { icon: <SiRust className='text-4xl text-orange-800' />, name: 'Rust' },
+    { icon: <FaNode className='text-4xl text-green-600' />, name: 'Node' },
+    { icon: <FaBootstrap className='text-4xl text-purple-600' />, name: 'Bootstrap' },
+    { icon: <SiWordpress className='text-4xl text-blue-800' />, name: 'WordPress' },
+    { icon: <SiPython className='text-4xl text-blue-500' />, name: 'Python' },
+    { icon: <SiPhp className='text-4xl text-indigo-600' />, name: 'PHP' },
+    { icon: <SiWeb3Dotjs className='text-4xl text-orange-500' />, name: 'Web3' },
+    { icon: <SiSolidity className='text-4xl text-gray-700' />, name: 'Solidity' },
+    { icon: <SiExpress className='text-4xl text-gray-800' />, name: 'Express' },
+    { icon: <SiVisualstudio className='text-4xl text-blue-600' />, name: 'VS Code' },
+  ];
+
   return (
-    <section id="skills">
-      <div id="skills" className=" skills bg-gray-300 mb-21 wrapper py-16">
+    <section id="skills" ref={sectionRef}>
+      <div className="skills bg-gray-300 mb-21 wrapper py-16">
         <div className="subHeadingContainer">
-          <h1 className='text-3xl md:text-4xl font-bold text-center'>Skills</h1>
-
+          <h1 
+            className={`text-3xl md:text-4xl font-bold text-center transition-all duration-1000 ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'
+            }`}
+          >
+            Skills
+          </h1>
         </div>
+        
         <ul className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8'>
-          <li className='flex flex-col items-center'>
-            <FaHtml5 className='text-4xl text-gray-500'></FaHtml5>
-            <p className='mt-2'>HTML</p>
-          </li>
-          <li className='flex flex-col items-center'>
-            <FaCss3 className='text-4xl text-gray-500'></FaCss3>
-            <p className='mt-2'>CSS3</p>
-          </li>
-          <li className='flex flex-col items-center'>
-            <FaJsSquare className='text-4xl text-gray-500'></FaJsSquare>
-            <p className='mt-2'>JavaScript</p>
-          </li>
-          <li className='flex flex-col items-center'>
-            <SiTypescript className='text-4xl text-gray-500'></SiTypescript>
-            <p className='mt-2'>TypeScript</p>
-          </li>
-          <li className='flex flex-col items-center'>
-            <FaGithub className='text-4xl text-gray-500'></FaGithub>
-            <p className='mt-2'>Github</p>
-          </li>
-          <li className='flex flex-col items-center'>
-            <FaReact className='text-4xl text-gray-500'></FaReact>
-            <p className='mt-2'>React</p>
-          </li><li className='flex flex-col items-center'>
-            <SiRust className='text-4xl text-gray-500'></SiRust>
-            <p className='mt-2'>Rust</p>
-          </li>
-          <li className='flex flex-col items-center'>
-            <FaNode className='text-4xl text-gray-500'></FaNode>
-            <p className='mt-2'>Node</p>
-          </li>
-          <li className='flex flex-col items-center'>
-            <FaBootstrap className='text-4xl text-gray-500'></FaBootstrap>
-            <p className='mt-2'>Bootstrap</p>
-          </li>
-          <li className='flex flex-col items-center'>
-            <SiWordpress className='text-4xl text-gray-500'></SiWordpress>
-            <p className='mt-2'>WordPress</p>
-          </li>
-          <li className='flex flex-col items-center'>
-            <SiPython className='text-4xl text-gray-500'></SiPython>
-            <p className='mt-2'>Python</p>
-          </li>
-          <li className='flex flex-col items-center'>
-            <SiPhp className='text-4xl text-gray-500'></SiPhp>
-            <p className='mt-2'>PHP</p>
-          </li>
-          <li className='flex flex-col items-center'>
-            <SiWeb3Dotjs className='text-4xl text-gray-500'></SiWeb3Dotjs>
-            <p className='mt-2'>Web3</p>
-          </li>
-          <li className='flex flex-col items-center'>
-            <SiSolidity className='text-4xl text-gray-500'></SiSolidity>
-            <p className='mt-2'>Solidity</p>
-          </li>
-          <li className='flex flex-col items-center'>
-            <SiExpress className='text-4xl text-gray-500'></SiExpress>
-            <p className='mt-2'>Express</p>
-          </li>
-          <li className='flex flex-col items-center'>
-            <SiVisualstudio className='text-4xl text-gray-500'></SiVisualstudio>
-            <p className='mt-2'>VS Code</p>
-          </li>
-
+          {skills.map((skill, index) => (
+            <li 
+              key={skill.name}
+              className={`flex flex-col items-center transition-all duration-700 hover:scale-110 hover:-translate-y-2 ${
+                isVisible 
+                  ? 'opacity-100 translate-y-0' 
+                  : 'opacity-0 translate-y-12'
+              }`}
+              style={{ 
+                transitionDelay: isVisible ? `${index * 100}ms` : '0ms'
+              }}
+            >
+              {skill.icon}
+              <p className='mt-2 font-medium text-gray-800'>{skill.name}</p>
+            </li>
+          ))}
         </ul>
-      </div> {/* .wrapper end */}
-
-      {/* put all the stuff learning 
-    <div className="wrapper  mb-16 wrapper py-16">
-        <div className="subHeadingContainer">
-          <h1 className='text-3xl md:text-4xl font-bold text-center'>Learning</h1>
-        </div>
-        <ul className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8'>
-          <li className='flex flex-col items-center'>
-          <SiSolidity className='text-4xl text-gray-500'></SiSolidity>
-                <p className='mt-2'>Solidity</p>
-          </li>
-              
-          <li className='flex flex-col items-center'>
-          <SiCplusplus className='text-4xl text-gray-500'></SiCplusplus>
-                <p className='mt-2'>C++</p>
-             </li>
-              
-              <li className='flex flex-col items-center'>
-          <SiPython className='text-4xl text-gray-500'></SiPython>
-                <p className='mt-2'>Python</p>
-             </li>
-             <li className='flex flex-col items-center'>
-          <SiWeb3Dotjs className='text-4xl text-gray-500'></SiWeb3Dotjs>
-                <p className='mt-2'>Web3</p>
-             </li>
-              
-            
-        </ul> {/* 
-      </div>  */ }{/* .wrapper end */}
+      </div>
     </section>
-
-  )
+  );
 }
 
-export default Skills
+export default Skills;
