@@ -15,12 +15,19 @@ const Project = () => {
   const cardRefs = useRef([]);
 
   const cards = [
+    /* NFT Minter */
     <Project1Card key="card1" />,
+    /* Learn French React */
     <Project2Card key="card2" />,
+    /* Asteroids Game */ 
     <Project3Card key="card3" />,
+    /* Babylon 3d app */
     <Project4Card key="card4" />,
+    /* QR App */
     <Project5Card key="card5" />,
+    /* paint APP */
     <Project6Card key="card6" />,
+    /* voltorb flip app */
     <Project7Card key="card7" />,
     <Project4Card key="card8" />,
     <Project4Card key="card9" />,
