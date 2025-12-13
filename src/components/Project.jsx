@@ -29,8 +29,11 @@ const Project = () => {
     <Project6Card key="card6" />,
     /* voltorb flip app */
     <Project7Card key="card7" />,
+    /* Apple Catcher */
     <Project4Card key="card8" />,
+    /* PyFlow  after you figure out*/ 
     <Project4Card key="card9" />,
+    /* Cat Tinder */ 
     <Project4Card key="card10" />,
     <Project4Card key="card11" />,
     <Project4Card key="card12" />,
