@@ -24,6 +24,7 @@ function Project5card() {
           <img
             src="assets/qr-code-gen.png"
             alt="card-image"
+            className="h-full w-full object-cover"
           />
         </CardHeader>
         <CardBody>

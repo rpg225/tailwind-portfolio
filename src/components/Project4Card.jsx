@@ -22,6 +22,7 @@ function Project4Card() {
         <img
           src="assets/babylon-3d-app.png"
           alt="card-image"
+          className="h-full w-full object-cover"
         />
       </CardHeader>
       <CardBody>

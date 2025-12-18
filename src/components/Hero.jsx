@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -8,70 +8,76 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id='hero' className='bg-red-500 overflow-hidden'>
-      <div className='mx-auto mb-max-w-xl pt-4 pb-7'>
+    <section
+      id="hero"
+      className="bg-slate-900 text-white overflow-hidden"
+    >
+      <div className="mx-auto max-w-4xl pt-10 pb-20">
+        {/* Avatar */}
         <div className="flex justify-center items-center">
-          <div 
+          <div
             className={`transition-all duration-1000 ${
-              isVisible 
-                ? 'opacity-100 scale-100' 
-                : 'opacity-0 scale-75'
+              isVisible
+                ? "opacity-100 scale-100"
+                : "opacity-0 scale-90"
             }`}
           >
             <img
               src="assets/headshot.jpg"
-              alt="profile-picture"
-              className="rounded-full w-32 h-32 object-cover shadow-lg"
+              alt="Rambod profile"
+              className="rounded-full w-32 h-32 object-cover ring-2 ring-slate-700 shadow-xl"
             />
           </div>
         </div>
-        
-        <div className='relative isolate px-6 pt-10 lg:px-8'>
-          <div className='text-center'>
-            <h1 
-              className={`text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl transition-all duration-1000 delay-300 ${
-                isVisible 
-                  ? 'opacity-100 translate-y-0' 
-                  : 'opacity-0 translate-y-8'
-              }`}
-            >
-              Hello! I am Rambod!
-            </h1>
-            <h2 
-              className={`text-2xl font-italic tracking-tight text-gray-700 sm:text-4xl mt-4 transition-all duration-1000 delay-500 ${
-                isVisible 
-                  ? 'opacity-100 translate-y-0' 
-                  : 'opacity-0 translate-y-8'
-              }`}
-            >
-              I am a Web Developer
-            </h2>
-          </div>
-          
-          <div 
-            className={`mt-10 flex items-center justify-center gap-x-6 transition-all duration-1000 delay-700 ${
-              isVisible 
-                ? 'opacity-100 translate-y-0' 
-                : 'opacity-0 translate-y-8'
+
+        {/* Text */}
+        <div className="relative isolate px-6 pt-12 text-center">
+          <h1
+            className={`text-4xl font-semibold tracking-tight sm:text-6xl transition-all duration-1000 delay-300 ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-6"
             }`}
           >
-            <a
-              href="./Project.js"
-              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 hover:scale-105 transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              View my Work
-            </a>
-            <a 
-              href="#contact" 
-              className="text-sm font-semibold leading-6 text-gray-900 hover:translate-x-1 transition-transform duration-200"
-            >
-              Stay in Touch <span aria-hidden="true">→</span>
-            </a>
-          </div>
+            Hello, I’m <span className="text-cyan-400">Rambod</span>
+          </h1>
+
+          <h2
+            className={`mt-4 text-xl sm:text-3xl font-light text-slate-300 transition-all duration-1000 delay-500 ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-6"
+            }`}
+          >
+            Web3 Front-End Engineer
+          </h2>
+        </div>
+
+        {/* Actions */}
+        <div
+          className={`mt-12 flex items-center justify-center gap-x-8 transition-all duration-1000 delay-700 ${
+            isVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-6"
+          }`}
+        >
+          <a
+            href="#projects"
+            className="rounded-md bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-900 shadow-md hover:bg-cyan-400 hover:scale-105 transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-400"
+          >
+            View My Work
+          </a>
+
+          <a
+            href="#contact"
+            className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
+          >
+            Stay in Touch →
+          </a>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Hero;

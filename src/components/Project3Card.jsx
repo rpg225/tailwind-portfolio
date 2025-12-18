@@ -22,6 +22,7 @@ function Project3Card() {
     <img
       src="assets/asteroidsgamecard.png"
       alt="card-image"
+      className="h-full w-full object-cover"
     />
   </CardHeader>
   <CardBody>

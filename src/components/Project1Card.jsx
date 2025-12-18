@@ -21,8 +21,9 @@ function Project1Card() {
     <Card className="mt-6 w-96 py-4 px-4 shadow-lg rounded-lg ">
       <CardHeader color="blue-gray" className="relative h-56">
         <img
-          src="assets/nft-minter.png"
+          src="assets/project-card-nft-minter.png"
           alt="card-image"
+          className="h-full w-full object-cover"
         />
       </CardHeader>
       <CardBody>

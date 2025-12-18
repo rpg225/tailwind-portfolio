@@ -20,6 +20,7 @@ function Project2Card() {
         <img
           src="assets/learnfrench.png"
           alt="card-image"
+          className="h-full w-full object-cover"
         />
       </CardHeader>
       <CardBody>

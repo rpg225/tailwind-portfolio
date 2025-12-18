@@ -20,7 +20,11 @@ function Project7card() {
 	return (
 		<Card className="mt-6 w-96 py-4 px-4 shadow-lg rounded-lg ">
 			<CardHeader color="blue-gray" className="relative h-56">
-				<img src="assets/voltorb-flip-web3.png" alt="card-image" />
+				<img 
+				src="assets/voltorb-flip-web3.png" 
+				alt="card-image"
+				className="h-full w-full object-cover"
+				 />
 			</CardHeader>
 			<CardBody>
 				<Typography variant="h5" color="blue-gray" className="mb-2">
