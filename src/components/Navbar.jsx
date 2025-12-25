@@ -1,48 +1,70 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
-    <header className="bg-slate-950">
-      <div className="container mx-auto flex justify-between">
-        <div className="flex flex-shrink-0 items-center">
-          <img
-            alt="my logo"
-            src="assets/SVG2.svg"
-            className="h-14 w-auto rounded-full"
-          />
+    <header className="bg-slate-950 border-b border-slate-800">
+      <div className="mx-auto max-w-6xl px-6 flex items-center justify-between">
+        {/* Logo */}
+        <div className="flex items-center">
+          <span className="text-white font-semibold tracking-tight">
+            Rambod
+          </span>
         </div>
-        <nav className="flex">
+
+        {/* Navigation */}
+        <nav className="flex items-center gap-x-8">
           <NavLink
             to="/"
             end
             className={({ isActive }) =>
-              `inflex-flex items-center py-6 px-3 mr-4 text-red-100 ${
-                isActive ? 'text-white' : ''
-              }`
+              `
+              inline-flex items-center py-6 text-sm font-medium transition-colors
+              ${
+                isActive
+                  ? "text-cyan-400 border-b-2 border-cyan-400"
+                  : "text-slate-300 hover:text-white"
+              }
+            `
             }
           >
             Home
           </NavLink>
+
           <NavLink
             to="/about"
             className={({ isActive }) =>
-              `inflex-flex items-center py-6 px-3 mr-4 text-red-100 ${
-                isActive ? 'text-red-100 bg-red-700' : ''
-              }`
+              `
+              inline-flex items-center py-6 text-sm font-medium transition-colors
+              ${
+                isActive
+                  ? "text-cyan-400 border-b-2 border-cyan-400"
+                  : "text-slate-300 hover:text-white"
+              }
+            `
             }
           >
             About
           </NavLink>
+
           <NavLink
             to="/project"
-            className="inflex-flex items-center py-6 px-3 mr-4 text-red-100"
+            className={({ isActive }) =>
+              `
+              inline-flex items-center py-6 text-sm font-medium transition-colors
+              ${
+                isActive
+                  ? "text-cyan-400 border-b-2 border-cyan-400"
+                  : "text-slate-300 hover:text-white"
+              }
+            `
+            }
           >
             Projects
           </NavLink>
         </nav>
       </div>
     </header>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;

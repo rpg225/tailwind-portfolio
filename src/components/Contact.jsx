@@ -1,41 +1,58 @@
 function Contact() {
-    return (
-        <div className=" bg-stone-300 text-center py-6">
-            <h2 className="mb-12 text-3xl font-bold">Contact</h2>
-              <form>
-              <div className="relative mb-6" data-te-input-wrapper-init>
-                    <input
-                        type="name"
-                        className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                        id="exampleInput91"
-                        placeholder="Name" />
-                      <label
-                        className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                        htmlFor="exampleInput91"
-                        >Name
-                      </label>
-                    </div>
-                <div className="relative mb-6" data-te-input-wrapper-init>
-                    
-                <input
-                    type="email"
-                    className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                    id="exampleInput91"
-                    placeholder="Email address" />
-                  <label
-                    className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                    htmlFor="exampleInput91"
-                    >Email address
-                  </label>
-                </div>
-                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-                    Send Message
-                  </button>
-                 </form>
-        </div>
-    
-      
-    )
-  }
-  
-  export default Contact
+  return (
+    <section
+      id="contact"
+      className="bg-slate-950 border-t border-slate-800 py-20"
+    >
+      <div className="mx-auto max-w-3xl px-6 text-center">
+        <h2 className="text-3xl font-semibold text-white">
+          Let’s Connect
+        </h2>
+
+        <p className="mt-4 text-slate-400">
+          Interested in working together or just want to chat about frontend or Web3?
+          Feel free to reach out.
+        </p>
+
+        <form className="mt-12 space-y-6">
+          {/* Name */}
+          <div>
+            <input
+              type="text"
+              placeholder="Your name"
+              className="w-full rounded-md bg-slate-900 border border-slate-700 px-4 py-3 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors"
+            />
+          </div>
+
+          {/* Email */}
+          <div>
+            <input
+              type="email"
+              placeholder="Email address"
+              className="w-full rounded-md bg-slate-900 border border-slate-700 px-4 py-3 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors"
+            />
+          </div>
+
+          {/* Message */}
+          <div>
+            <textarea
+              rows="4"
+              placeholder="Your message"
+              className="w-full rounded-md bg-slate-900 border border-slate-700 px-4 py-3 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors resize-none"
+            />
+          </div>
+
+          {/* CTA */}
+          <button
+            type="submit"
+            className="mt-6 inline-flex items-center justify-center rounded-md bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-900 hover:bg-cyan-400 hover:scale-105 transition-all"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  );
+}
+
+export default Contact;

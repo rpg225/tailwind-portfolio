@@ -62,7 +62,7 @@ const ProjectsPreview = () => {
           }`}
         >
           <a
-            href="/projects"
+            href="/project"
             className="inline-flex items-center gap-x-2 rounded-md border border-slate-700 px-6 py-3 text-sm font-medium text-slate-300 hover:border-cyan-400 hover:text-white transition-colors"
           >
             View All Projects →
