@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 
-import Project1Card from "./Project1Card"; // NFT Minter
+import ProjectNFT from "./ProjectNFT"; // NFT Minter
 import Project3Card from "./Project3Card"; // Asteroids
 import Project4Card from "./Project4Card"; // Digital Will (fork)
 import Project7Card from "./Project7Card"; // Voltorb Flip
+// import ProjectVruLik from "./ProjectVruLik //Project VruLik
 
 const Project = () => {
   const [visible, setVisible] = useState(false);
@@ -20,7 +21,7 @@ const Project = () => {
   }, []);
 
   const featured = [
-    { id: "nft-minter", node: <Project1Card /> },
+    { id: "nft-minter", node: <ProjectNFT /> },
     { id: "voltorb-flip", node: <Project7Card /> },
     { id: "asteroids", node: <Project3Card /> },
   ];

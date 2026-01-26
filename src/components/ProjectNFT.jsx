@@ -14,7 +14,7 @@ import {
 } from "react-icons/fa";
 import { SiSolidity, SiWeb3Dotjs } from "react-icons/si";
 
-function Project1Card() {
+function ProjectNFT() {
   return (
     <Card className="w-96 bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-3 hover:shadow-[0_0_40px_rgba(34,211,238,0.15)]">
       
@@ -74,4 +74,4 @@ function Project1Card() {
   );
 }
 
-export default Project1Card;
+export default ProjectNFT;
