@@ -4,64 +4,74 @@ import {
   CardBody,
   CardFooter,
   Typography,
-
 } from "@material-tailwind/react";
-import { 
-  FaHtml5, 
+import {
+  FaHtml5,
   FaCss3,
   FaGithub,
   FaReact,
-  FaJsSquare } 
-  from 'react-icons/fa';
+  FaJsSquare,
+} from "react-icons/fa";
 import { SiSolidity, SiWeb3Dotjs } from "react-icons/si";
-
 
 function Project1Card() {
   return (
-    <Card className="mt-6 w-96 py-4 px-4 shadow-lg rounded-lg ">
-      <CardHeader color="blue-gray" className="relative h-56">
+    <Card className="w-96 bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-3 hover:shadow-[0_0_40px_rgba(34,211,238,0.15)]">
+      
+      {/* Image */}
+      <CardHeader className="relative h-56 bg-black">
         <img
           src="assets/project-card-nft-minter.png"
-          alt="card-image"
-          className="h-full w-full object-cover"
+          alt="NFT Minter"
+          className="h-full w-full object-cover opacity-90"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
       </CardHeader>
-      <CardBody>
-        <Typography variant="h5" color="blue-gray" className="mb-2">
+
+      {/* Content */}
+      <CardBody className="px-6 py-5">
+        <Typography
+          variant="h5"
+          className="mb-3 text-white tracking-tight"
+        >
           NFT Minter
         </Typography>
-        <Typography>
-          This DApp was built as a learning project to understand and implement core Web3 functionalities, including smart contract development, frontend-blockchain interaction, and metadata handling for NFTs.
+
+        <Typography className="text-sm text-slate-400 leading-relaxed">
+          A Web3 learning project focused on minting NFTs, handling metadata,
+          and connecting a React frontend to Solidity smart contracts.
         </Typography>
       </CardBody>
-      <CardFooter className="pt-0">
-      <div className="px-6 pt-4 pb-2 flex space-x-2 items-center text-center  justify-center">
-              <i> <FaHtml5 className='text-4xl text-gray-500'></FaHtml5> </i>
-              <i> <FaCss3 className='text-4xl text-gray-500'></FaCss3> </i>
-              <i> <FaJsSquare className='text-4xl text-gray-500'></FaJsSquare> </i>
-              <i> <FaReact className='text-4xl text-gray-500'></FaReact> </i>
-              <i><SiSolidity className='text-4xl text-gray-500'></SiSolidity></i>
-              <i><SiWeb3Dotjs className='text-4xl text-gray-500' ></SiWeb3Dotjs></i>
-        </div>
-        <div className="px-6 pt-4 pb-2 flex space-x-2 items-center text-center justify-center">
-        <button className="bg-teal-900 flex items-center justify-center hover:bg-blue-700 text-white font-bold py-2 px-2 rounded">
-            <a 
-            className="text-sm flex items-center justify-center"
-            href="https://rpg225.github.io/nft-minter/">
-             Live Demo </a>
-                </button>
-                <button className="bg-slate-900 flex items-center justify-center hover:bg-blue-700 text-white font-bold py-2 px-2 rounded">
-            <a 
-            className="text-sm flex items-center justify-center"
-            href="https://github.com/rpg225/nft-minter">
-            <i className="text-center"> <FaGithub className='text-xl mr-2 justify-center text-gray-500'></FaGithub> </i>
-              Repo </a>
-                </button>
-          </div>
-        {/* <Button>Read More</Button> */}
+
+      {/* Tech stack */}
+      <div className="px-6 flex flex-wrap gap-3 text-slate-400">
+        <FaHtml5 className="text-xl hover:text-orange-500 transition-colors" />
+        <FaCss3 className="text-xl hover:text-blue-400 transition-colors" />
+        <FaJsSquare className="text-xl hover:text-yellow-400 transition-colors" />
+        <FaReact className="text-xl hover:text-cyan-400 transition-colors" />
+        <SiSolidity className="text-xl hover:text-purple-400 transition-colors" />
+        <SiWeb3Dotjs className="text-xl hover:text-cyan-400 transition-colors" />
+      </div>
+
+      {/* Actions */}
+      <CardFooter className="px-6 pt-6 pb-6 flex gap-3">
+        <a
+          href="https://rpg225.github.io/nft-minter/"
+          className="flex-1 text-center rounded-md bg-cyan-500 text-slate-900 font-semibold py-2 text-sm hover:bg-cyan-400 transition-colors"
+        >
+          Live Demo
+        </a>
+
+        <a
+          href="https://github.com/rpg225/nft-minter"
+          className="flex items-center justify-center gap-2 flex-1 rounded-md border border-slate-700 text-slate-300 py-2 text-sm hover:border-cyan-400 hover:text-white transition-colors"
+        >
+          <FaGithub className="text-lg" />
+          Repo
+        </a>
       </CardFooter>
     </Card>
   );
 }
 
-export default Project1Card
+export default Project1Card;

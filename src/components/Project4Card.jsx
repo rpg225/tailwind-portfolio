@@ -27,7 +27,7 @@ function Project4Card() {
       </CardHeader>
       <CardBody>
         <Typography variant="h5" color="blue-gray" className="mb-2">
-          Babylon 3D App
+          Digital Will App
         </Typography>
         <Typography>
           This project was created using the Babylon JS framework

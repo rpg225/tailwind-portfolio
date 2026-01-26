@@ -4,60 +4,63 @@ import {
   CardBody,
   CardFooter,
   Typography,
-
 } from "@material-tailwind/react";
-import { 
-  FaHtml5, 
+import {
+  FaHtml5,
   FaCss3,
   FaGithub,
-  // FaReact,
-  FaJsSquare } 
-  from 'react-icons/fa';
-
-
+  FaJsSquare,
+} from "react-icons/fa";
 
 function Project3Card() {
-  return(  <Card className="mt-6 w-96 py-4 px-4 shadow-lg rounded-lg ">
-  <CardHeader color="blue-gray" className="relative h-56">
-    <img
-      src="assets/asteroidsgamecard.png"
-      alt="card-image"
-      className="h-full w-full object-cover"
-    />
-  </CardHeader>
-  <CardBody>
-    <Typography variant="h5" color="blue-gray" className="mb-2">
-      Asteroids JavaScript Game
-    </Typography>
-    <Typography>
-      A complete, playable version of the arcade game Asteroids, showcasing core game development principles using only vanilla JavaScript to manage state, input, and graphics.
-    </Typography>
-  </CardBody>
-  <CardFooter className="pt-0">
-  <div className="px-6 pt-4 pb-2 flex space-x-2 items-center text-center justify-center">
-          <i> <FaHtml5 className='text-4xl text-gray-500'></FaHtml5> </i>
-          <i> <FaCss3 className='text-4xl text-gray-500'></FaCss3> </i>
-          <i> <FaJsSquare className='text-4xl text-gray-500'></FaJsSquare> </i>
-    </div>
-    <div className="px-6 pt-4 pb-2 flex space-x-2 items-center text-center justify-center">
-    <button className="bg-teal-900 flex items-center justify-center hover:bg-blue-700 text-white font-bold py-2 px-2 rounded">
-        <a 
-        className="text-sm flex items-center justify-center"
-        href=" ">
-         Live Demo </a>
-            </button>
-            <button className="bg-slate-900 flex items-center justify-center hover:bg-blue-700 text-white font-bold py-2 px-2 rounded">
-        <a 
-        className="text-sm flex items-center justify-center"
-        href="https://github.com/rpg225/AsteroidsJS">
-        <i className="text-center"> <FaGithub className='text-xl mr-2 justify-center text-gray-500'></FaGithub> </i>
-          Repo </a>
-            </button>
+  return (
+    <Card className="w-96 bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-3 hover:shadow-[0_0_40px_rgba(34,211,238,0.15)]">
+      
+      {/* Image */}
+      <CardHeader className="relative h-56 bg-black">
+        <img
+          src="assets/asteroidsgamecard.png"
+          alt="Asteroids JavaScript Game"
+          className="h-full w-full object-cover opacity-90"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+      </CardHeader>
+
+      {/* Content */}
+      <CardBody className="px-6 py-5">
+        <Typography
+          variant="h5"
+          className="mb-3 text-white tracking-tight"
+        >
+          Asteroids (Vanilla JS)
+        </Typography>
+
+        <Typography className="text-sm text-slate-400 leading-relaxed">
+          A fully playable remake of the classic Asteroids arcade game,
+          built from scratch using vanilla JavaScript to manage game
+          state, physics, input, and rendering.
+        </Typography>
+      </CardBody>
+
+      {/* Tech stack */}
+      <div className="px-6 flex gap-3 text-slate-400">
+        <FaHtml5 className="text-xl hover:text-orange-500 transition-colors" />
+        <FaCss3 className="text-xl hover:text-blue-400 transition-colors" />
+        <FaJsSquare className="text-xl hover:text-yellow-400 transition-colors" />
       </div>
-    {/* <Button>Read More</Button> */}
-  </CardFooter>
-</Card>
-);
+
+      {/* Actions */}
+      <CardFooter className="px-6 pt-6 pb-6 flex gap-3">
+        <a
+          href="https://github.com/rpg225/AsteroidsJS"
+          className="flex items-center justify-center gap-2 flex-1 rounded-md border border-slate-700 text-slate-300 py-2 text-sm hover:border-cyan-400 hover:text-white transition-colors"
+        >
+          <FaGithub className="text-lg" />
+          Repo
+        </a>
+      </CardFooter>
+    </Card>
+  );
 }
 
-export default Project3Card
+export default Project3Card;
