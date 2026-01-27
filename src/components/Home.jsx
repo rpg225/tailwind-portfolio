@@ -1,6 +1,6 @@
 import Hero from "./Hero";
 import Skills from "./Skills";
-import ProjectPreview from "./ProjectPreview";
+import Projects from "./Projects";
 import Contact from "./Contact";
 
 function Home() {
@@ -8,7 +8,7 @@ function Home() {
     <div className="HomePage">
       <Hero />
       <Skills />
-      <ProjectPreview />
+      <Projects />
       <Contact />
     </div>
   );

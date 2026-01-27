@@ -51,6 +51,12 @@ function ProjectAsteroids() {
 
       {/* Actions */}
       <CardFooter className="px-6 pt-6 pb-6 flex gap-3">
+         <a
+          href="https://rpg225.github.io/AsteroidsJS/"
+          className="flex-1 text-center rounded-md bg-cyan-500 text-slate-900 font-semibold py-2 text-sm hover:bg-cyan-400 transition-colors"
+        >
+          Live Demo
+        </a>
         <a
           href="https://github.com/rpg225/AsteroidsJS"
           className="flex items-center justify-center gap-2 flex-1 rounded-md border border-slate-700 text-slate-300 py-2 text-sm hover:border-cyan-400 hover:text-white transition-colors"
