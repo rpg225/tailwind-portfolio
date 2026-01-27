@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import Project1Card from "./Project1Card";
-import Project2Card from "./Project2Card";
-import Project3Card from "./Project3Card";
+import ProjectNFT from "./ProjectNFT";
+import ProjectVoltorb from "./ProjectVoltorb";
+import ProjectAsteroids from "./ProjectAsteroids";
+
 
 const ProjectsPreview = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -50,9 +51,9 @@ const ProjectsPreview = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <Project1Card />
-          <Project2Card />
-          <Project3Card />
+          <ProjectNFT />
+          <ProjectVoltorb />
+          <ProjectAsteroids />
         </div>
 
         {/* CTA */}

@@ -1,9 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 
 import ProjectNFT from "./ProjectNFT"; // NFT Minter
-import Project3Card from "./Project3Card"; // Asteroids
-import Project4Card from "./Project4Card"; // Digital Will (fork)
-import Project7Card from "./Project7Card"; // Voltorb Flip
+import ProjectAsteroids from "./ProjectAsteroids"; // Asteroids
+import ProjectVoltorb from "./ProjectVoltorb"; // Voltorb Flip
 // import ProjectVruLik from "./ProjectVruLik //Project VruLik
 
 const Project = () => {
@@ -22,8 +21,8 @@ const Project = () => {
 
   const featured = [
     { id: "nft-minter", node: <ProjectNFT /> },
-    { id: "voltorb-flip", node: <Project7Card /> },
-    { id: "asteroids", node: <Project3Card /> },
+    { id: "voltorb-flip", node: <ProjectVoltorb /> },
+    { id: "asteroids", node: <ProjectAsteroids /> },
   ];
 
   return (
@@ -89,7 +88,7 @@ const Project = () => {
             style={{ transitionDelay: "500ms" }}
           >
             <div className="w-full max-w-md hover:-translate-y-3 hover:scale-[1.03] transition-all duration-300">
-              <Project4Card />
+              {/* <ProjectVruLik /> */}
             </div>
           </div>
         </div>

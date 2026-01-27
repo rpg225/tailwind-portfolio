@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import About from "./components/About"
 import Project from "./components/Project"
 import Footer from "./components/Footer";
+import VruLikCaseStudy from "./components/VruLikCaseStudy";
 import NavBar from "./components/Navbar"
 
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/"  element={<Home />} exact />
         <Route path="/about" element={<About />} />
         <Route  path='/project' element={<Project />} />
+        <Route path='/vrulikcasestudy' element={<VruLikCaseStudy />}></Route>
 
       </Routes>
       <Footer></Footer>
