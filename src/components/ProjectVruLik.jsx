@@ -54,7 +54,7 @@ function ProjectVruLik() {
       <CardFooter className="px-6 pt-6 pb-6 flex gap-3 mt-auto">
         <a
           href="/vrulikcasestudy"
-          className="flex-1 text-center rounded-md bg-cyan-500 text-slate-900 font-semibold py-2 text-sm hover:bg-cyan-400 transition-colors"
+          className="flex-1 text-center rounded-md bg-cyan-200 text-slate-900 font-semibold py-2 text-sm hover:bg-cyan-400 transition-colors"
         >
           Case Study
         </a>
@@ -63,7 +63,7 @@ function ProjectVruLik() {
           href="https://vrulik-ink.vercel.app/"
           className="flex-1 text-center rounded-md bg-cyan-500 text-slate-900 font-semibold py-2 text-sm hover:bg-cyan-400 transition-colors"
         >
-          Live
+          Live Demo
         </a>
 
         <a

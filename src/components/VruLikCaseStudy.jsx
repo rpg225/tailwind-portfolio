@@ -42,7 +42,7 @@ const VruLikCaseStudy = () => {
           }`}
         >
           <img
-            src="assets/vrulik-ink-hero.png"
+            src="assets/vrulik-hero.png"
             alt="Vrulik Ink website"
             className="rounded-xl ring-1 ring-slate-800 shadow-xl"
           />

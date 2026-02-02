@@ -1,4 +1,25 @@
+import { useState } from "react";
+
 function Contact() {
+
+  const [sent, setSent ] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const res = await fetch("https://formspree.io/f/abcdwxyz", {
+      method: "POST",
+      body: new FormData(e.target),
+      headers: { Accept: "application/json" },
+    });
+
+    if (res.ok) {
+      setSent(true);
+      e.target.reset();
+    }
+  };
+
+
+
   return (
     <section
       id="contact"
@@ -14,7 +35,10 @@ function Contact() {
           Feel free to reach out.
         </p>
 
-        <form className="mt-12 space-y-6">
+        <form 
+        action="https://formspree.io/f/xjgovwqe"
+        method = "POST"
+        className="mt-12 space-y-6">
           {/* Name */}
           <div>
             <input
