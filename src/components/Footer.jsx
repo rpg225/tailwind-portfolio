@@ -1,10 +1,11 @@
-
 const Footer = () => {
   return (
-    <footer className='bg-slate-950 text-center dark:bg-neutral-700 lg:text-left sticky-bottom-0'> 
-       <div className='bg-white/5 p-4 text-center text-surface text-white'> Made by Rambod </div>
+    <footer className="bg-black border-t border-neutral-800">
+      <div className="mx-auto max-w-6xl px-6 py-6 text-center text-sm text-neutral-400">
+        Made by <span className="text-white font-medium">Rambod</span>
+      </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

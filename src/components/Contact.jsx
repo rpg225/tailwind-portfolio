@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 function Contact() {
-
-  const [sent, setSent ] = useState(false);
+  const [sent, setSent] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch("https://formspree.io/f/abcdwxyz", {
+
+    const res = await fetch("https://formspree.io/f/xjgovwqe", {
       method: "POST",
       body: new FormData(e.target),
       headers: { Accept: "application/json" },
@@ -17,8 +17,6 @@ function Contact() {
       e.target.reset();
     }
   };
-
-
 
   return (
     <section
@@ -35,43 +33,48 @@ function Contact() {
           Feel free to reach out.
         </p>
 
-        <form 
-        action="https://formspree.io/f/xjgovwqe"
-        method = "POST"
-        className="mt-12 space-y-6">
+        <form
+          onSubmit={handleSubmit}
+          className="mt-12 space-y-6"
+        >
           {/* Name */}
-          <div>
-            <input
-              type="text"
-              placeholder="Your name"
-              className="w-full rounded-md bg-slate-900 border border-slate-700 px-4 py-3 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors"
-            />
-          </div>
+          <input
+            type="text"
+            name="name"
+            required
+            placeholder="Your name"
+            className="w-full rounded-md bg-slate-900 border border-slate-700 px-4 py-3 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors"
+          />
 
           {/* Email */}
-          <div>
-            <input
-              type="email"
-              placeholder="Email address"
-              className="w-full rounded-md bg-slate-900 border border-slate-700 px-4 py-3 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors"
-            />
-          </div>
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Email address"
+            className="w-full rounded-md bg-slate-900 border border-slate-700 px-4 py-3 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors"
+          />
 
           {/* Message */}
-          <div>
-            <textarea
-              rows="4"
-              placeholder="Your message"
-              className="w-full rounded-md bg-slate-900 border border-slate-700 px-4 py-3 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors resize-none"
-            />
-          </div>
+          <textarea
+            name="message"
+            rows="4"
+            required
+            placeholder="Your message"
+            className="w-full rounded-md bg-slate-900 border border-slate-700 px-4 py-3 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors resize-none"
+          />
 
-          {/* CTA */}
           <button
             type="submit"
-            className="mt-6 inline-flex items-center justify-center rounded-md bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-900 hover:bg-cyan-400 hover:scale-105 transition-all"
+            disabled={sent}
+            className={`mt-6 inline-flex items-center justify-center rounded-md px-6 py-3 text-sm font-semibold transition-all
+              ${
+                sent
+                  ? "bg-emerald-500 text-white"
+                  : "bg-cyan-500 text-slate-900 hover:bg-cyan-400 hover:scale-105"
+              }`}
           >
-            Send Message
+            {sent ? "Message sent ✓" : "Send Message"}
           </button>
         </form>
       </div>

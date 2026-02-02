@@ -9,8 +9,8 @@ const Hero = () => {
 
   return (
     <section
-      id="hero"
-      className="bg-slate-900 text-white overflow-hidden"
+      id="home"
+      className="min-h-screen pt-32 bg-slate-950"
     >
       <div className="mx-auto max-w-4xl pt-10 pb-20">
         {/* Avatar */}
@@ -31,16 +31,17 @@ const Hero = () => {
         </div>
 
         {/* Text */}
-        <div className="relative isolate px-6 pt-12 text-center">
-          <h1
-            className={`text-4xl font-semibold tracking-tight sm:text-6xl transition-all duration-1000 delay-300 ${
-              isVisible
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-6"
-            }`}
-          >
-            Hello, I’m <span className="text-cyan-400">Rambod</span>
-          </h1>
+          <div className="relative isolate px-6 pt-12 text-center">
+            <h1
+              className={`text-4xl font-semibold tracking-tight sm:text-6xl text-white transition-all duration-1000 delay-300 ${
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-6"
+              }`}
+            >
+            
+              Hello, I’m <span className="text-cyan-400">Rambod</span>
+            </h1>
 
           <h2
             className={`mt-4 text-xl sm:text-3xl font-light text-slate-300 transition-all duration-1000 delay-500 ${

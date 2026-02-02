@@ -19,54 +19,61 @@ const About = () => {
     <section
       ref={sectionRef}
       id="about"
-      className="bg-slate-900 border-t border-slate-800 py-24"
+      className="bg-slate-900 border-t border-slate-800 py-28"
     >
-      <div className="mx-auto max-w-5xl px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-16 items-center">
         {/* Image */}
         <div
           className={`flex justify-center transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <img
-            src="assets/headshot.jpg"
-            alt="Rambod Pour Goshtasbi"
-            className="w-64 h-64 rounded-xl object-cover ring-1 ring-slate-700 shadow-xl"
-          />
+          <div className="relative">
+            <img
+              src="assets/headshot.jpg"
+              alt="Rambod Pour Goshtasbi"
+              className="w-64 h-64 rounded-2xl object-cover ring-1 ring-slate-700 shadow-2xl"
+            />
+            {/* subtle glow */}
+            <div className="absolute inset-0 rounded-2xl ring-1 ring-cyan-400/20 pointer-events-none" />
+          </div>
         </div>
 
         {/* Text */}
         <div
-          className={`transition-all duration-1000 delay-200 ${
+          className={`relative transition-all duration-1000 delay-200 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <h2 className="text-3xl font-semibold text-white">
+          {/* Accent line */}
+          <div className="absolute -left-6 top-2 h-16 w-px bg-cyan-400/40 hidden md:block" />
+
+          <h2 className="text-3xl sm:text-4xl font-semibold text-white tracking-tight">
             About Me
           </h2>
 
-          <p className="mt-6 text-slate-300 leading-relaxed">
+          <p className="mt-6 text-slate-300 leading-relaxed text-[15.5px]">
             I’m a front-end engineer with a strong foundation in JavaScript and
             React, focused on building clean, predictable user interfaces.
             I enjoy working close to the browser — understanding how things work
             under the hood rather than relying solely on abstractions.
           </p>
 
-          <p className="mt-4 text-slate-300 leading-relaxed">
+          <p className="mt-4 text-slate-300 leading-relaxed text-[15.5px]">
             Lately, I’ve been exploring Web3 front-end development, focusing on
             wallet interactions, UX constraints, and building interfaces that
             remain usable even when the underlying systems are complex.
           </p>
 
-          <div className="mt-6 flex items-center gap-4">
+          <div className="mt-8">
             <a
               href="https://www.linkedin.com/in/rpg225/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-slate-400 hover:text-cyan-400 transition-colors"
+              className="inline-flex items-center gap-3 rounded-md border border-slate-700 px-4 py-2 text-slate-300 hover:border-cyan-400 hover:text-cyan-400 transition-colors"
             >
-              <FaLinkedin className="text-xl" />
-              LinkedIn
+              <FaLinkedin className="text-lg" />
+              <span className="text-sm font-medium">Connect on LinkedIn</span>
             </a>
           </div>
         </div>
