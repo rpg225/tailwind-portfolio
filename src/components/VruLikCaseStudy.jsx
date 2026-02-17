@@ -42,7 +42,7 @@ const VruLikCaseStudy = () => {
           }`}
         >
           <img
-            src="/public/assets/vrulik-hero.png"
+            src="/assets/vrulik-hero.png"
             alt="Vrulik Ink website"
             className="rounded-xl ring-1 ring-slate-800 shadow-xl"
           />
@@ -100,7 +100,7 @@ const VruLikCaseStudy = () => {
           </div>
 
           <img
-            src="/public/assets/vrulik-ink-figma.png"
+            src="/assets/vrulik-ink-figma.png"
             alt="Vrulik Ink Figma design"
             className="rounded-xl ring-1 ring-slate-800 shadow-xl"
           />
