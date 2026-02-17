@@ -1,21 +1,35 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
 
 function NavBar() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const scrollToSection = (id) => {
     setOpen(false);
-    document.getElementById(id)?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+
+    if (location.pathname !== "/") {
+      // Navigate home first, then scroll after the page loads
+      navigate("/");
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 100);
+    } else {
+      document.getElementById(id)?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
   };
 
   return (
     <header className="bg-neutral-950 border-b border-neutral-800 fixed top-0 z-50 w-full">
       <div className="mx-auto max-w-6xl px-6 flex items-center justify-between h-16">
-        
+
         {/* Logo */}
         <span
           onClick={() => scrollToSection("home")}
@@ -28,10 +42,7 @@ function NavBar() {
         <nav className="hidden md:flex items-center gap-x-8">
           <NavLink
             to="/"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("home");
-            }}
+            onClick={(e) => { e.preventDefault(); scrollToSection("home"); }}
             className="text-sm font-medium text-cyan-400 hover:text-cyan-300 transition-colors"
           >
             Home
@@ -39,10 +50,7 @@ function NavBar() {
 
           <NavLink
             to="/"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("about");
-            }}
+            onClick={(e) => { e.preventDefault(); scrollToSection("about"); }}
             className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
           >
             About
@@ -50,10 +58,7 @@ function NavBar() {
 
           <NavLink
             to="/"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("projects");
-            }}
+            onClick={(e) => { e.preventDefault(); scrollToSection("projects"); }}
             className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
           >
             Projects
@@ -61,10 +66,7 @@ function NavBar() {
 
           <NavLink
             to="/"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("contact");
-            }}
+            onClick={(e) => { e.preventDefault(); scrollToSection("contact"); }}
             className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
           >
             Contact
@@ -86,10 +88,7 @@ function NavBar() {
         <div className="md:hidden bg-neutral-950 border-t border-neutral-800 px-6 py-4 space-y-4">
           <NavLink
             to="/"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("home");
-            }}
+            onClick={(e) => { e.preventDefault(); scrollToSection("home"); }}
             className="block text-white text-sm font-medium"
           >
             Home
@@ -97,10 +96,7 @@ function NavBar() {
 
           <NavLink
             to="/"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("about");
-            }}
+            onClick={(e) => { e.preventDefault(); scrollToSection("about"); }}
             className="block text-white text-sm font-medium"
           >
             About
@@ -108,10 +104,7 @@ function NavBar() {
 
           <NavLink
             to="/"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("projects");
-            }}
+            onClick={(e) => { e.preventDefault(); scrollToSection("projects"); }}
             className="block text-white text-sm font-medium"
           >
             Projects
@@ -119,10 +112,7 @@ function NavBar() {
 
           <NavLink
             to="/"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("contact");
-            }}
+            onClick={(e) => { e.preventDefault(); scrollToSection("contact"); }}
             className="block text-white text-sm font-medium"
           >
             Contact
