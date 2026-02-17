@@ -42,7 +42,7 @@ const VruLikCaseStudy = () => {
           }`}
         >
           <img
-            src="assets/vrulik-hero.png"
+            src="/public/assets/vrulik-hero.png"
             alt="Vrulik Ink website"
             className="rounded-xl ring-1 ring-slate-800 shadow-xl"
           />
@@ -72,7 +72,7 @@ const VruLikCaseStudy = () => {
           <p className="mt-6 text-slate-300 leading-relaxed max-w-3xl">
             Many tattoo studio websites rely on outdated layouts or overly busy
             visuals. The challenge was to create a site that felt modern and
-            atmospheric while keeping the focus on the artwork and the studio’s
+            atmospheric while keeping the focus on the artwork and the studio's
             identity.
           </p>
         </div>
@@ -90,7 +90,7 @@ const VruLikCaseStudy = () => {
             <p className="mt-6 text-slate-300 leading-relaxed">
               I started with visual exploration in Figma — focusing on contrast,
               spacing, and typography. Dark backgrounds, restrained accent
-              colors, and strong hierarchy were used to mirror tattoo culture’s
+              colors, and strong hierarchy were used to mirror tattoo culture's
               visual language.
             </p>
             <p className="mt-4 text-slate-300 leading-relaxed">
@@ -100,7 +100,7 @@ const VruLikCaseStudy = () => {
           </div>
 
           <img
-            src="assets/vrulik-ink-figma.png"
+            src="/public/assets/vrulik-ink-figma.png"
             alt="Vrulik Ink Figma design"
             className="rounded-xl ring-1 ring-slate-800 shadow-xl"
           />
@@ -133,7 +133,7 @@ const VruLikCaseStudy = () => {
           </h2>
           <p className="mt-6 text-slate-300 leading-relaxed max-w-3xl">
             The result is a brand-aligned website that feels modern, confident,
-            and easy to navigate — allowing the studio’s work to remain the
+            and easy to navigate — allowing the studio's work to remain the
             focal point.
           </p>
         </div>
