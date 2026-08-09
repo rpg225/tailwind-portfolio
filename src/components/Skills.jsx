@@ -13,6 +13,23 @@ const skills = [
     ],
   },
   {
+    title: "Shopify",
+    items: [
+      "Liquid",
+      "Custom Sections",
+      "Theme Development",
+      "Klaviyo Integration",
+    ],
+  },
+  {
+    title: "Design",
+    items: [
+      "Figma",
+      "Design Systems",
+      "Prototyping",
+    ],
+  },
+  {
     title: "Web3 (Learning & Building)",
     items: [
       "Ethers.js",
@@ -26,7 +43,6 @@ const skills = [
     items: [
       "Git & GitHub",
       "Vite",
-      "Figma",
       "Linux / WSL",
     ],
   },
@@ -61,7 +77,7 @@ const Skills = () => {
             Skills & Stack
           </h2>
           <p className="mt-4 text-slate-400 max-w-xl mx-auto">
-            Technologies I actively use and am building with in Web3 projects.
+            The tools I design and build with, day to day.
           </p>
         </div>
 
@@ -70,10 +86,10 @@ const Skills = () => {
           {skills.map((group, idx) => (
             <div
               key={group.title}
+              style={{ transitionDelay: `${idx * 150}ms` }}
               className={`
                 rounded-xl bg-slate-900/60 border border-slate-800 p-6
                 transition-all duration-1000 ease-out
-                delay-${idx * 150}
                 ${
                   isVisible
                     ? "opacity-100 translate-y-0"
