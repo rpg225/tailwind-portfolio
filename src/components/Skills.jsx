@@ -10,6 +10,7 @@ const skills = [
       "HTML5",
       "CSS3",
       "Tailwind CSS",
+      "Git & GitHub",
     ],
   },
   {
@@ -36,14 +37,6 @@ const skills = [
       "Wallet Integrations",
       "Smart Contract Interaction",
       "Solidity (Basics)",
-    ],
-  },
-  {
-    title: "Tooling",
-    items: [
-      "Git & GitHub",
-      "Vite",
-      "Linux / WSL",
     ],
   },
 ];
@@ -82,7 +75,7 @@ const Skills = () => {
         </div>
 
         {/* Skill cards */}
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {skills.map((group, idx) => (
             <div
               key={group.title}
