@@ -50,7 +50,7 @@ const Hero = () => {
                 : "opacity-0 translate-y-6"
             }`}
           >
-            Web3 Front-End Engineer
+            Design Engineer
           </h2>
         </div>
 
