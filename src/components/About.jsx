@@ -53,16 +53,11 @@ const About = () => {
           </h2>
 
           <p className="mt-6 text-slate-300 leading-relaxed text-[15.5px]">
-            I’m a front-end engineer with a strong foundation in JavaScript and
-            React, focused on building clean, predictable user interfaces.
-            I enjoy working close to the browser — understanding how things work
-            under the hood rather than relying solely on abstractions.
+  I&rsquo;m a design engineer working at the intersection of interface and implementation. What this means is that I design the experience and build it, without a handoff in between. My focus is on clean, predictable UI built with JavaScript and React, but I care as much about the visual and interaction decisions as the code that ships them. I like working close to the browser, understanding how things actually work rather than leaning on abstractions I can&rsquo;t explain.
           </p>
 
           <p className="mt-4 text-slate-300 leading-relaxed text-[15.5px]">
-            Lately, I’ve been exploring Web3 front-end development, focusing on
-            wallet interactions, UX constraints, and building interfaces that
-            remain usable even when the underlying systems are complex.
+            I&rsquo;ve also spent time in Web3 front-end work which includes wallet interactions, UX under real technical constraints, and making interfaces feel usable even when what&rsquo;s underneath them is genuinely complex.
           </p>
 
           <div className="mt-8">
