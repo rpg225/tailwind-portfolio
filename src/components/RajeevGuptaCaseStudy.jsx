@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 
-const RajeevCaseStudy = () => {
+const RajeevGuptaCaseStudy = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => entry.isIntersecting && setIsVisible(true),
-      { threshold: 0.1 }
+      { threshold: 0.2 }
     );
 
     if (sectionRef.current) observer.observe(sectionRef.current);
@@ -20,65 +20,65 @@ const RajeevCaseStudy = () => {
   `;
 
   return (
-    <section ref={sectionRef} className="bg-white border-t border-gray-200 py-28">
+    <section ref={sectionRef} className="bg-slate-900 border-t border-slate-800 py-28">
       <div className="mx-auto max-w-5xl px-6 space-y-24">
-        
+
         {/* HERO */}
         <div className={sectionStyles("delay-0") + " text-center"}>
-          <h1 className="text-4xl md:text-5xl font-semibold text-[#2F436E]">
+          <h1 className="text-4xl md:text-5xl font-semibold text-white">
             Rajeev Gupta Law
           </h1>
-          <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
-            Designed and built a conversion-focused legal website to improve trust, clarity, and client acquisition for a modern law firm.
+          <p className="mt-6 text-lg text-slate-400 max-w-3xl mx-auto">
+            Designed and developed a professional law firm website focused on trust, clarity, and conversion—combining sophisticated design with functional user experience.
           </p>
         </div>
 
-        {/* PROJECT OVERVIEW */}
+        {/* OVERVIEW */}
         <div className={sectionStyles("delay-150") + " grid md:grid-cols-2 gap-12 items-center"}>
           <img
-            src="/assets/rajeev-hero.png"
-            alt="Rajeev Gupta law firm website"
-            className="rounded-xl ring-1 ring-gray-200 shadow-lg"
+            src="/assets/rajeev-gupta-home.png"
+            alt="Rajeev Gupta Law website"
+            className="rounded-xl ring-1 ring-slate-800 shadow-xl"
           />
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F436E]">Project Overview</h2>
-            <p className="mt-6 text-gray-700 leading-relaxed">
-              I designed and developed a professional online presence for an Ontario-based firm. The primary goal was to create a clean experience that builds immediate trust and guides users toward booking a consultation.
+            <h2 className="text-2xl font-semibold text-white">Project Overview</h2>
+            <p className="mt-6 text-slate-300 leading-relaxed">
+              Rajeev Gupta Law is a professional law firm website designed to establish credibility and facilitate client engagement. The goal was to create a digital experience that reflects expertise and professionalism while guiding potential clients toward consultation and service inquiry.
             </p>
           </div>
         </div>
 
-        {/* THE PROBLEM & TARGET USERS */}
+        {/* PROBLEM & TARGET USERS */}
         <div className={sectionStyles("delay-300") + " grid md:grid-cols-2 gap-12"}>
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F436E]">The Problem</h2>
-            <p className="mt-6 text-gray-700 leading-relaxed">
-              Most law firm websites suffer from outdated design, poor structure, and weak calls-to-action. These friction points cause stressed users to leave before ever making contact.
+            <h2 className="text-2xl font-semibold text-white">The Problem</h2>
+            <p className="mt-6 text-slate-300 leading-relaxed">
+              Many law firm websites feel dated, overwhelming, or overly formal, making it difficult for potential clients to understand services or take action. The challenge is balancing professionalism with accessibility, ensuring information is clear without feeling cold or corporate.
             </p>
           </div>
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F436E]">Target Users</h2>
-            <p className="mt-6 text-gray-700 leading-relaxed">
-              Individuals needing urgent legal help (family, immigration, real estate) who are often stressed and time-sensitive. They require clarity, reassurance, and simple next steps.
+            <h2 className="text-2xl font-semibold text-white">Target Users</h2>
+            <p className="mt-6 text-slate-300 leading-relaxed">
+              Individuals seeking legal counsel who value professionalism, transparency, and ease of navigation. For these users, trust, clarity of services, and a clear path to consultation matter most.
             </p>
           </div>
         </div>
 
         {/* DESIGN APPROACH */}
         <div className={sectionStyles("delay-500") + " space-y-8"}>
-          <h2 className="text-2xl font-semibold text-[#2F436E]">Design Approach</h2>
+          <h2 className="text-2xl font-semibold text-white">Design Approach</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-6 bg-gray-50 rounded-lg border border-gray-100">
-              <h3 className="font-semibold text-[#2F436E] mb-2">Trust-First</h3>
-              <p className="text-sm text-gray-600">Deep blue tones for authority, gold accents for credibility, and clean spacing to reduce overwhelm.</p>
+            <div className="p-6 bg-slate-800/50 rounded-lg border border-slate-700">
+              <h3 className="font-semibold text-white mb-2">Trust-first Design</h3>
+              <p className="text-sm text-slate-400">Clean typography, structured layout, and professional imagery establish credibility and confidence from the first interaction.</p>
             </div>
-            <div className="p-6 bg-gray-50 rounded-lg border border-gray-100">
-              <h3 className="font-semibold text-[#2F436E] mb-2">Content Hierarchy</h3>
-              <p className="text-sm text-gray-600">Every section answers a specific user question, from "Can I trust this lawyer?" to "How do I start?"</p>
+            <div className="p-6 bg-slate-800/50 rounded-lg border border-slate-700">
+              <h3 className="font-semibold text-white mb-2">Conversion-focused UI</h3>
+              <p className="text-sm text-slate-400">Clear hierarchy and strategically placed CTAs guide users toward consultation requests and service inquiries without aggressive tactics.</p>
             </div>
-            <div className="p-6 bg-gray-50 rounded-lg border border-gray-100">
-              <h3 className="font-semibold text-[#2F436E] mb-2">Conversion Layout</h3>
-              <p className="text-sm text-gray-600">Low-friction consultation forms and consistent CTA sections repeated strategically across the site.</p>
+            <div className="p-6 bg-slate-800/50 rounded-lg border border-slate-700">
+              <h3 className="font-semibold text-white mb-2">Information Clarity</h3>
+              <p className="text-sm text-slate-400">Services, practice areas, and expertise are presented with visual and textual clarity to reduce friction and build confidence.</p>
             </div>
           </div>
         </div>
@@ -86,41 +86,41 @@ const RajeevCaseStudy = () => {
         {/* KEY FEATURES */}
         <div className={sectionStyles("delay-700") + " grid md:grid-cols-2 gap-12 items-center"}>
           <div className="order-2 md:order-1">
-            <h2 className="text-2xl font-semibold text-[#2F436E]">Key Features</h2>
-            <ul className="mt-6 space-y-4 text-gray-700">
+            <h2 className="text-2xl font-semibold text-white">Key Features</h2>
+            <ul className="mt-6 space-y-4 text-slate-300">
               <li className="flex gap-3">
-                <span className="text-[#2F436E] font-bold">01.</span>
-                <span><strong>Practice Areas:</strong> Clean card layout for easy scanning of services.</span>
+                <span className="text-white font-bold">/</span>
+                <span><strong>Services Overview:</strong> Well-organized practice areas with clear descriptions and expertise highlights.</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-[#2F436E] font-bold">02.</span>
-                <span><strong>FAQ Accordion:</strong> Reduces friction and uncertainty while keeping the UI clean.</span>
+                <span className="text-white font-bold">/</span>
+                <span><strong>Strategic CTAs:</strong> Prominently placed consultation request forms and contact options throughout the site.</span>
               </li>
               <li className="flex gap-3">
-                <span className="text-[#2F436E] font-bold">03.</span>
-                <span><strong>Consultation Form:</strong> Minimalist, focused inputs to reduce cognitive load.</span>
+                <span className="text-white font-bold">/</span>
+                <span><strong>Subtle Motion:</strong> Used Framer Motion to enhance engagement and guide user attention without compromising professionalism.</span>
               </li>
             </ul>
           </div>
           <img
-            src="/assets/rajeev-features.png"
-            alt="Feature highlights"
-            className="rounded-xl shadow-lg order-1 md:order-2"
+            src="/assets/rajeev-gupta-figma.png"
+            alt="Rajeev Gupta Law design features"
+            className="rounded-xl ring-1 ring-slate-800 shadow-xl order-1 md:order-2"
           />
         </div>
 
         {/* CHALLENGES & OUTCOME */}
         <div className={sectionStyles("delay-900") + " grid md:grid-cols-2 gap-12"}>
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F436E]">Challenges</h2>
-            <p className="mt-6 text-gray-700 leading-relaxed">
-              The main challenge was balancing simplicity with professionalism—ensuring the site felt "clean but not empty." This was solved by building a robust design system in Figma early on.
+            <h2 className="text-2xl font-semibold text-white">Challenges</h2>
+            <p className="mt-6 text-slate-300 leading-relaxed">
+              The main challenge was balancing professionalism with modern design—avoiding an overly formal or outdated aesthetic while maintaining the gravitas required in the legal industry. I focused on clean design language that feels contemporary yet trustworthy.
             </p>
           </div>
           <div>
-            <h2 className="text-2xl font-semibold text-[#2F436E]">Outcome</h2>
-            <p className="mt-6 text-gray-700 leading-relaxed">
-              A modern, fully structured legal website that bridges the gap between visual aesthetics and business goals, providing a clear user flow from landing to consultation.
+            <h2 className="text-2xl font-semibold text-white">Outcome</h2>
+            <p className="mt-6 text-slate-300 leading-relaxed">
+              A professional, modern law firm website that builds credibility and guides potential clients toward action. The experience balances sophisticated design with functional user flows, creating a scalable foundation for client engagement and inquiries.
             </p>
           </div>
         </div>
@@ -130,4 +130,4 @@ const RajeevCaseStudy = () => {
   );
 };
 
-export default RajeevCaseStudy;
+export default RajeevGuptaCaseStudy

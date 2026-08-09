@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import About from "./components/About"
 import Footer from "./components/Footer";
 import VruLikCaseStudy from "./components/VruLikCaseStudy";
+import RajeevGuptaCaseStudy from "./components/RajeevGuptaCaseStudy";
 import NavBar from "./components/Navbar"
 
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/"  element={<Home />} exact />
         <Route path="/about" element={<About />} />
         <Route path='/vrulikcasestudy' element={<VruLikCaseStudy />}></Route>
+        <Route path='/rajeevguptacase-study' element={<RajeevGuptaCaseStudy />}></Route>
 
       </Routes>
       <Footer></Footer>

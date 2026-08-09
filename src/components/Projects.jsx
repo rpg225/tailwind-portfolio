@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from "react";
 
 import ProjectNFT from "./ProjectNFT";
 import ProjectVoltorb from "./ProjectVoltorb";
-import ProjectAsteroids from "./ProjectAsteroids";
+import ProjectRajeevGupta from "./ProjectRajeevGupta";
+// import ProjectAsteroids from "./ProjectAsteroids";
 import ProjectVruLik from "./ProjectVruLik";
 
 const Projects = () => {
@@ -47,10 +48,12 @@ const Projects = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
+         
+          <ProjectRajeevGupta />
           <ProjectVruLik />
           <ProjectNFT />
           <ProjectVoltorb />
-          <ProjectAsteroids />
+          {/* <ProjectAsteroids /> */}
         </div>
 
         {/* Footer note */}
