@@ -4,6 +4,7 @@ import About from "./components/About"
 import Footer from "./components/Footer";
 import VruLikCaseStudy from "./components/VruLikCaseStudy";
 import RajeevGuptaCaseStudy from "./components/RajeevGuptaCaseStudy";
+import ThriveVantageCaseStudy from "./components/ThriveVantageCaseStudy";
 import NavBar from "./components/Navbar"
 
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path='/vrulikcasestudy' element={<VruLikCaseStudy />}></Route>
         <Route path='/rajeevguptacase-study' element={<RajeevGuptaCaseStudy />}></Route>
+        <Route path='/thrivevantagecase-study' element={<ThriveVantageCaseStudy />}></Route>
 
       </Routes>
       <Footer></Footer>

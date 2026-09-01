@@ -43,7 +43,7 @@ const VruLikCaseStudy = () => {
           <div>
             <h2 className="text-2xl font-semibold text-white">Project Overview</h2>
             <p className="mt-6 text-slate-300 leading-relaxed">
-              VruLik Ink is a tattoo studio website designed to reflect the atmosphere of tattoo culture—bold, minimal, and intentional. The goal was to create a digital experience that reflects the studio's vibe while keeping the artwork as the primary focus.
+              VruLik Ink is a tattoo studio website built to capture the atmosphere of tattoo culture through a bold, minimal, and intentional design. The goal was to create a digital experience that feels true to the studio while keeping the tattoo artwork front and center.
             </p>
           </div>
         </div>
