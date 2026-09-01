@@ -4,18 +4,22 @@ const ThriveVantageCaseStudy = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
-  useEffect(() => {
-    const target = sectionRef.current;
-    if (!target) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => entry.isIntersecting && setIsVisible(true),
-      { threshold: 0.2 }
-    );
-
-    observer.observe(target);
-    return () => observer.unobserve(target);
-  }, []);
+useEffect(() => {
+  const target = sectionRef.current;
+  if (!target) return;
+  // Element is already on screen (above-the-fold) — show immediately
+  const rect = target.getBoundingClientRect();
+  if (rect.top < window.innerHeight) {
+    setIsVisible(true);
+    return;
+  }
+  const observer = new IntersectionObserver(
+    ([entry]) => entry.isIntersecting && setIsVisible(true),
+    { threshold: 0.05 }
+  );
+  observer.observe(target);
+  return () => observer.unobserve(target);
+}, []);
 
   const sectionStyles = (delay) => `
     transition-all duration-1000 ${delay}
@@ -35,7 +39,7 @@ const ThriveVantageCaseStudy = () => {
             Thrive Vantage Nutrition
           </h1>
           <p className="mt-6 text-lg text-slate-400 max-w-3xl mx-auto">
-            Designed and developed a full digital launch engine for a pre-launch Canadian nutrition brand — combining a custom Shopify storefront, Klaviyo email infrastructure, DNS setup, and branded content, delivered end to end as a solo design engineer.
+            Designed and developed a full digital launch engine for a pre-launch nutrition brand that combined a custom Shopify storefront, Klaviyo email infrastructure, DNS setup, and branded content, delivered end to end as a solo design engineer.
           </p>
           <p className="mt-4 text-sm text-slate-500 italic">
             Pre-launch project. Video walkthrough and private GitHub repo available upon request.
