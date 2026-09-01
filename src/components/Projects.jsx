@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from "react";
 
 import ProjectNFT from "./ProjectNFT";
 import ProjectThriveVantage from "./ProjectThriveVantage";
-import ProjectVoltorb from "./ProjectVoltorb";
+// import ProjectVoltorb from "./ProjectVoltorb";
 import ProjectRajeevGupta from "./ProjectRajeevGupta";
-import ProjectAsteroids from "./ProjectAsteroids";
+// import ProjectAsteroids from "./ProjectAsteroids";
 import ProjectVruLik from "./ProjectVruLik";
 
 const Projects = () => {
@@ -54,8 +54,8 @@ const Projects = () => {
           <ProjectRajeevGupta />
           <ProjectVruLik />
           <ProjectNFT />
-          <ProjectVoltorb />
-          <ProjectAsteroids />
+          {/* <ProjectVoltorb />
+          <ProjectAsteroids /> */}
         </div>
 
         {/* Footer note */}
