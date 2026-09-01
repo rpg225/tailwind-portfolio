@@ -29,7 +29,7 @@ const RajeevGuptaCaseStudy = () => {
             Rajeev Gupta Law
           </h1>
           <p className="mt-6 text-lg text-slate-400 max-w-3xl mx-auto">
-            Designed and developed a professional law firm website focused on trust, clarity, and conversion—combining sophisticated design with functional user experience.
+            Designed and developed a professional law firm website focused on building trust and making information easy to find. The design combines a polished, sophisticated look with a clear and straightforward user experience.
           </p>
         </div>
 
