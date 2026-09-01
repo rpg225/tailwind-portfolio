@@ -114,7 +114,7 @@ const VruLikCaseStudy = () => {
           <div>
             <h2 className="text-2xl font-semibold text-white">Challenges</h2>
             <p className="mt-6 text-slate-300 leading-relaxed">
-              The main challenge was balancing minimalism with personality—ensuring the site didn't feel empty while avoiding an over-designed, messy look. I focused on restraint, letting the artwork carry the personality.
+              The main challenge was finding the right balance between minimalism and personality. I wanted the site to feel clean without feeling empty, while also avoiding a design that felt too busy or overdone. I kept things simple and let the artwork bring most of the personality to the experience.
             </p>
           </div>
           <div>
