@@ -56,7 +56,7 @@ useEffect(() => {
           <div>
             <h2 className="text-2xl font-semibold text-white">Project Overview</h2>
             <p className="mt-6 text-slate-300 leading-relaxed">
-              Thrive Vantage Nutrition Ltd. is a premium health supplements company founded by a certified Integrative Health Coach in Ottawa. The founder needed a complete digital presence built before product launch — a branded Shopify storefront, automated email marketing flows, and a connected technical infrastructure — all manageable by a non-technical client after handoff.
+              Thrive Vantage Nutrition Ltd. is a premium health supplements brand founded by an Ottawa-based Integrative Health Coach. To prepare for a successful launch, the founder needed a cohesive digital ecosystem that matched her brand's ambition. I crafted a high-performance Shopify storefront, built out robust email marketing funnels, and stabilized the underlying technical infrastructure. By focusing on intuitive content management and clean, scalable code, I delivered a platform that empowers the client to own their operations with confidence, removing the need for ongoing technical support.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               {["Shopify", "Klaviyo", "Liquid", "CSS", "GSAP", "GoDaddy DNS", "Figma"].map((tool) => (
