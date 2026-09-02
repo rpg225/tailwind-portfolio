@@ -34,7 +34,7 @@ function ProjectThriveVantage() {
         </Typography>
 
         <Typography className="text-sm text-slate-400 leading-relaxed mb-4">
-          A fully custom Shopify storefront for a nutrition brand. Built bespoke sections, scroll-reveal animations, a blog ecosystem, and a brand-matched design system — all within the Tinker OS 2.0 theme architecture.
+          A fully custom Shopify storefront for a nutrition brand. I built custom sections, scroll-reveal animations, a blog system, and a design system tailored to the brand, all within the Tinker OS 2.0 theme architecture.
         </Typography>
 
         {/* Tech stack */}
