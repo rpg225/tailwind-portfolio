@@ -161,11 +161,6 @@ const RajeevGuptaCaseStudy = () => {
               </li>
             </ul>
           </div>
-          <img
-            src="/assets/rajeev-gupta-figma.png"
-            alt="Rajeev Gupta Law design features"
-            className="rounded-xl ring-1 ring-slate-800 shadow-xl order-1 md:order-2"
-          />
         </div>
 
         {/* CHALLENGES & OUTCOME */}
