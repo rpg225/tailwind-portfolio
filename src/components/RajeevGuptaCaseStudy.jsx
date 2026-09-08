@@ -73,7 +73,7 @@ const RajeevGuptaCaseStudy = () => {
         {/* OVERVIEW */}
         <div className={sectionStyles("delay-150") + " grid md:grid-cols-2 gap-12 items-center"}>
           <img
-            src="/assets/RajeevGupta/home.png"
+            src="/assets/rajeev-gupta-home.png"
             alt="Rajeev Gupta Law website"
             className="rounded-xl ring-1 ring-slate-800 shadow-xl"
           />
