@@ -5,13 +5,24 @@ const RajeevGuptaCaseStudy = () => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+
+    // If the section is already in the viewport on mount (e.g. direct page load),
+    // show it immediately without waiting for the observer to fire.
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      setIsVisible(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => entry.isIntersecting && setIsVisible(true),
-      { threshold: 0.2 }
+      { threshold: 0.1 }
     );
 
-    if (sectionRef.current) observer.observe(sectionRef.current);
-    return () => sectionRef.current && observer.unobserve(sectionRef.current);
+    observer.observe(el);
+    return () => observer.unobserve(el);
   }, []);
 
   const sectionStyles = (delay) => `
