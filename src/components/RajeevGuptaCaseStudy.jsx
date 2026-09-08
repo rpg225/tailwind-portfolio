@@ -19,13 +19,42 @@ const RajeevGuptaCaseStudy = () => {
     ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
   `;
 
+  const loFiWireframes = [
+    { src: "/assets/RajeevGupta/home-lofi.png", label: "Home" },
+    { src: "/assets/RajeevGupta/about-lofi.png", label: "About" },
+    { src: "/assets/RajeevGupta/consultation-page-lofi.png", label: "Book a Consultation" },
+    { src: "/assets/RajeevGupta/faqs-lofi.png", label: "FAQs" },
+    { src: "/assets/RajeevGupta/contact-lofi.png", label: "Contact" },
+    { src: "/assets/RajeevGupta/practice-areas-lofi.png", label: "Practice Areas" },
+    { src: "/assets/RajeevGupta/resources-lofi.png", label: "Resources" },
+  ];
+
   const wireframes = [
     { src: "/assets/RajeevGupta/home.png", label: "Home" },
     { src: "/assets/RajeevGupta/about.png", label: "About" },
     { src: "/assets/RajeevGupta/consultation-page.png", label: "Book a Consultation" },
     { src: "/assets/RajeevGupta/faqs.png", label: "FAQs" },
     { src: "/assets/RajeevGupta/contact.png", label: "Contact" },
+    { src: "/assets/RajeevGupta/practice-areas.png", label: "Practice Areas" },
+    { src: "/assets/RajeevGupta/Resources.png", label: "Resources" },
   ];
+
+  const WireframeGrid = ({ items }) => (
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      {items.map(({ src, label }) => (
+        <div key={label} className="flex flex-col gap-3">
+          <div className="rounded-xl overflow-hidden ring-1 ring-slate-700 shadow-lg bg-slate-800">
+            <img
+              src={src}
+              alt={`${label} page wireframe`}
+              className="w-full object-top object-cover"
+            />
+          </div>
+          <span className="text-sm text-slate-400 text-center">{label}</span>
+        </div>
+      ))}
+    </div>
+  );
 
   return (
     <section ref={sectionRef} className="bg-slate-900 border-t border-slate-800 py-28">
@@ -44,7 +73,7 @@ const RajeevGuptaCaseStudy = () => {
         {/* OVERVIEW */}
         <div className={sectionStyles("delay-150") + " grid md:grid-cols-2 gap-12 items-center"}>
           <img
-            src="/assets/rajeev-gupta-home.png"
+            src="/assets/RajeevGupta/home.png"
             alt="Rajeev Gupta Law website"
             className="rounded-xl ring-1 ring-slate-800 shadow-xl"
           />
@@ -91,6 +120,17 @@ const RajeevGuptaCaseStudy = () => {
           </div>
         </div>
 
+        {/* LO-FI WIREFRAMES */}
+        <div className={sectionStyles("delay-550") + " space-y-10"}>
+          <div>
+            <h2 className="text-2xl font-semibold text-white">Lo-Fi Wireframes</h2>
+            <p className="mt-3 text-slate-400">
+              Early-stage sketches used to define layout structure, content hierarchy, and user flow before visual design began.
+            </p>
+          </div>
+          <WireframeGrid items={loFiWireframes} />
+        </div>
+
         {/* HI-FIDELITY WIREFRAMES */}
         <div className={sectionStyles("delay-600") + " space-y-10"}>
           <div>
@@ -99,20 +139,7 @@ const RajeevGuptaCaseStudy = () => {
               Full-page designs across all core sections of the site, built in Figma before development.
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
-            {wireframes.map(({ src, label }) => (
-              <div key={label} className="flex flex-col gap-3">
-                <div className="rounded-xl overflow-hidden ring-1 ring-slate-700 shadow-lg bg-slate-800">
-                  <img
-                    src={src}
-                    alt={`${label} page wireframe`}
-                    className="w-full object-top object-cover"
-                  />
-                </div>
-                <span className="text-sm text-slate-400 text-center">{label}</span>
-              </div>
-            ))}
-          </div>
+          <WireframeGrid items={wireframes} />
         </div>
 
         {/* KEY FEATURES */}
