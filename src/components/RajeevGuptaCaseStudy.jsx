@@ -19,6 +19,14 @@ const RajeevGuptaCaseStudy = () => {
     ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
   `;
 
+  const wireframes = [
+    { src: "/assets/RajeevGupta/home.png", label: "Home" },
+    { src: "/assets/RajeevGupta/about.png", label: "About" },
+    { src: "/assets/RajeevGupta/consultation-page.png", label: "Book a Consultation" },
+    { src: "/assets/RajeevGupta/faqs.png", label: "FAQs" },
+    { src: "/assets/RajeevGupta/contact.png", label: "Contact" },
+  ];
+
   return (
     <section ref={sectionRef} className="bg-slate-900 border-t border-slate-800 py-28">
       <div className="mx-auto max-w-5xl px-6 space-y-24">
@@ -83,6 +91,30 @@ const RajeevGuptaCaseStudy = () => {
           </div>
         </div>
 
+        {/* HI-FIDELITY WIREFRAMES */}
+        <div className={sectionStyles("delay-600") + " space-y-10"}>
+          <div>
+            <h2 className="text-2xl font-semibold text-white">Hi-Fidelity Wireframes</h2>
+            <p className="mt-3 text-slate-400">
+              Full-page designs across all core sections of the site, built in Figma before development.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+            {wireframes.map(({ src, label }) => (
+              <div key={label} className="flex flex-col gap-3">
+                <div className="rounded-xl overflow-hidden ring-1 ring-slate-700 shadow-lg bg-slate-800">
+                  <img
+                    src={src}
+                    alt={`${label} page wireframe`}
+                    className="w-full object-top object-cover"
+                  />
+                </div>
+                <span className="text-sm text-slate-400 text-center">{label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* KEY FEATURES */}
         <div className={sectionStyles("delay-700") + " grid md:grid-cols-2 gap-12 items-center"}>
           <div className="order-2 md:order-1">
@@ -130,4 +162,4 @@ const RajeevGuptaCaseStudy = () => {
   );
 };
 
-export default RajeevGuptaCaseStudy
+export default RajeevGuptaCaseStudy;
