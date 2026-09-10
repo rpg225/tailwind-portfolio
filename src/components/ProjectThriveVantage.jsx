@@ -22,7 +22,7 @@ function ProjectThriveVantage() {
         <img
           src="assets/thrive-vantage-home.png"
           alt="Thrive Vantage"
-          className="h-full w-full object-cover opacity-90"
+          className="h-full w-full object-cover object-left-top opacity-90"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
       </CardHeader>
