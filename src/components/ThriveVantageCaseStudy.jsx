@@ -26,6 +26,14 @@ useEffect(() => {
     ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
   `;
 
+  const deliverables = [
+    { number: "5+", label: "Custom Liquid Sections" },
+    { number: "6",  label: "Branded Email Templates" },
+    { number: "9",  label: "Long-form Blog Articles" },
+    { number: "3",  label: "Klaviyo Automated Flows" },
+    { number: "1",  label: "Complete Launch Engine" },
+  ];
+
   return (
     <section ref={sectionRef} className="bg-slate-900 border-t border-slate-800 py-28">
       <div className="mx-auto max-w-5xl px-6 space-y-24">
@@ -128,7 +136,7 @@ useEffect(() => {
               </li>
               <li className="flex gap-3">
                 <span className="text-amber-400 font-bold">/</span>
-                <span><strong>Editorial Content:</strong> Nine long-form blog articles written across three brand pillars — Physical Performance, Stress Resilience, and Cognitive Function.</span>
+                <span><strong>Editorial Content:</strong> Nine long-form blog articles written across three brand pillars: Physical Performance, Stress Resilience, and Cognitive Function.</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-amber-400 font-bold">/</span>
@@ -136,11 +144,26 @@ useEffect(() => {
               </li>
             </ul>
           </div>
-          {/* <img
-            src="/assets/thrive-vantage-edge.png"
-            alt="Thrive Vantage The Edge section"
-            className="rounded-xl ring-1 ring-slate-800 shadow-xl order-1 md:order-2"
-          /> */}
+
+          {/* Deliverables at a Glance — fills the empty right column */}
+          <div className="order-1 md:order-2 bg-slate-800/50 rounded-xl border border-slate-700 p-6">
+            <p className="text-xs font-semibold tracking-widest uppercase text-amber-400 mb-5">
+              Deliverables at a Glance
+            </p>
+            <div className="space-y-1">
+              {deliverables.map(({ number, label }) => (
+                <div
+                  key={label}
+                  className="flex items-center gap-4 py-3 border-b border-slate-700/60 last:border-0"
+                >
+                  <span className="text-2xl font-bold text-amber-400 w-12 shrink-0 text-right">
+                    {number}
+                  </span>
+                  <span className="text-slate-300 text-sm">{label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* BRAND TOKENS */}
@@ -191,7 +214,6 @@ useEffect(() => {
             <p className="mt-6 text-slate-300 leading-relaxed">
               The project was delivered successfully and the process around it is sharper for having gone through it.
             </p>
-            
           </div>
           <div>
             <h2 className="text-2xl font-semibold text-white">Outcome</h2>
