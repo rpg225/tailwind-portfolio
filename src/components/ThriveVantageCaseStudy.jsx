@@ -136,11 +136,11 @@ useEffect(() => {
               </li>
             </ul>
           </div>
-          <img
+          {/* <img
             src="/assets/thrive-vantage-edge.png"
             alt="Thrive Vantage The Edge section"
             className="rounded-xl ring-1 ring-slate-800 shadow-xl order-1 md:order-2"
-          />
+          /> */}
         </div>
 
         {/* BRAND TOKENS */}
