@@ -73,7 +73,7 @@ useEffect(() => {
           <div>
             <h2 className="text-2xl font-semibold text-white">The Problem</h2>
             <p className="mt-6 text-slate-300 leading-relaxed">
-              The client had started building her own Shopify store using the Tinker theme and created a Canva mood board she called wireframes. The site lacked brand cohesion, proper email infrastructure, and a scalable content structure. DNS was misconfigured, Klaviyo was unverified, and there was no clear path to launch. The project required translating a founder's vision into a production-ready digital system — fast.
+              The client had already started building her Shopify store using the Tinker theme and had put together a Canva mood board that she referred to as her wireframes. The site needed more consistency across the brand, a better email setup, and a content structure that could grow with the business. DNS needed to be fixed, Klaviyo still needed to be verified, and there wasn't a clear path to getting everything ready for launch. My job was to take her vision and turn it into a working website, while getting everything sorted out quickly.
             </p>
           </div>
           <div>
