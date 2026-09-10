@@ -28,7 +28,6 @@ useEffect(() => {
 
   const deliverables = [
     { number: "5+", label: "Custom Liquid Sections" },
-    { number: "6",  label: "Branded Email Templates" },
     { number: "9",  label: "Long-form Blog Articles" },
     { number: "3",  label: "Klaviyo Automated Flows" },
     { number: "1",  label: "Complete Launch Engine" },
@@ -128,7 +127,7 @@ useEffect(() => {
               </li>
               <li className="flex gap-3">
                 <span className="text-amber-400 font-bold">/</span>
-                <span><strong>Klaviyo Email Infrastructure:</strong> Pre-launch welcome flow, Launch Waitlist, six branded email templates, and full Shopify integration tested and live.</span>
+                <span><strong>Klaviyo Email Infrastructure:</strong> Pre-launch welcome flow, Launch Waitlist, and full Shopify integration tested and live.</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-amber-400 font-bold">/</span>
