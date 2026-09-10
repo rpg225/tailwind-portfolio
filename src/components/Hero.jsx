@@ -52,7 +52,13 @@ const Hero = () => {
           >
             Design Engineer
           </h2>
-          <p className="mt-2 text-base sm:text-lg font-normal tracking-wide text-slate-400">
+          <p
+            className={`mt-2 text-base sm:text-lg font-normal tracking-wide text-slate-400 transition-all duration-1000 delay-700 ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-6"
+            }`}
+          >
             UX/UI Design + Front-End Development
           </p>
         </div>
