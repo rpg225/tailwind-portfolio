@@ -135,7 +135,7 @@ useEffect(() => {
               </li>
               <li className="flex gap-3">
                 <span className="text-amber-400 font-bold">/</span>
-                <span><strong>Editorial Content:</strong> Nine long-form blog articles written across three brand pillars: Physical Performance, Stress Resilience, and Cognitive Function.</span>
+                <span><strong>Custom Article Component:</strong> Built a dynamic blog template for the Learn page structured around three brand content pillars: Physical Performance, Stress Resilience, and Cognitive Function.</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-amber-400 font-bold">/</span>
