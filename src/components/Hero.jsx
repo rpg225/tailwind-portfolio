@@ -52,6 +52,9 @@ const Hero = () => {
           >
             Design Engineer
           </h2>
+          <p className="mt-2 text-base sm:text-lg font-normal tracking-wide text-slate-400">
+            UX/UI Design + Front-End Development
+          </p>
         </div>
 
         {/* Actions */}
