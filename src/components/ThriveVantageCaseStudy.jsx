@@ -165,34 +165,7 @@ useEffect(() => {
           </div>
         </div>
 
-        {/* BRAND TOKENS */}
-        <div className={sectionStyles("delay-800") + " space-y-8"}>
-          <h2 className="text-2xl font-semibold text-white">Brand System</h2>
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="p-6 bg-slate-800/50 rounded-lg border border-slate-700 text-center">
-              <div className="w-12 h-12 rounded-full mx-auto mb-3" style={{ backgroundColor: "#131e3d" }}></div>
-              <p className="text-sm font-semibold text-white">Navy</p>
-              <p className="text-xs text-slate-500 mt-1">#131e3d</p>
-            </div>
-            <div className="p-6 bg-slate-800/50 rounded-lg border border-slate-700 text-center">
-              <div className="w-12 h-12 rounded-full mx-auto mb-3" style={{ backgroundColor: "#e0be4b" }}></div>
-              <p className="text-sm font-semibold text-white">Gold</p>
-              <p className="text-xs text-slate-500 mt-1">#e0be4b</p>
-            </div>
-            <div className="p-6 bg-slate-800/50 rounded-lg border border-slate-700 text-center">
-              <div className="w-12 h-12 rounded-full mx-auto mb-3 bg-white"></div>
-              <p className="text-sm font-semibold text-white">White</p>
-              <p className="text-xs text-slate-500 mt-1">#ffffff</p>
-            </div>
-            <div className="p-6 bg-slate-800/50 rounded-lg border border-slate-700 text-center">
-              <div className="w-12 h-12 rounded-full mx-auto mb-3 bg-slate-300 flex items-center justify-center">
-                <span className="text-xs font-bold text-slate-800">Aa</span>
-              </div>
-              <p className="text-sm font-semibold text-white">Montserrat</p>
-              <p className="text-xs text-slate-500 mt-1">Primary Font</p>
-            </div>
-          </div>
-        </div>
+
 
         {/* CHALLENGES & OUTCOME */}
         <div className={sectionStyles("delay-900") + " grid md:grid-cols-2 gap-12"}>
