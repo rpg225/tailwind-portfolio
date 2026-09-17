@@ -75,18 +75,12 @@ useEffect(() => {
           </div>
         </div>
 
-        {/* PROBLEM & TARGET USERS */}
+        {/* PROBLEM */}
         <div className={sectionStyles("delay-300") + " grid md:grid-cols-2 gap-12"}>
           <div>
             <h2 className="text-2xl font-semibold text-white">The Problem</h2>
             <p className="mt-6 text-slate-300 leading-relaxed">
               The client had already started building her Shopify store using the Tinker theme and had put together a Canva mood board that she referred to as her wireframes. The site needed more consistency across the brand, a better email setup, and a content structure that could grow with the business. DNS needed to be fixed, Klaviyo still needed to be verified, and there wasn't a clear path to getting everything ready for launch. My job was to take her vision and turn it into a working website, while getting everything sorted out quickly.
-            </p>
-          </div>
-          <div>
-            <h2 className="text-2xl font-semibold text-white">Target Users</h2>
-            <p className="mt-6 text-slate-300 leading-relaxed">
-              Ambitious professionals aged 25 to 45 seeking clean, science-backed supplements for physical performance, stress resilience, and cognitive function. Users who value premium positioning, authoritative brand voice, and transparent ingredient sourcing over generic wellness marketing.
             </p>
           </div>
         </div>
